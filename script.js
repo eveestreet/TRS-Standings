@@ -29,40 +29,24 @@ const driverColors = {
 /* =========================
     DADOS DOS PILOTOS
 ========================= */
+async function loadJSON(path) {
+    const res = await fetch(path);
+    return await res.json();
+}
 
-const drivers = [
-    { name: "dogemastertrain", role: "Main Driver", team: "Crimson Motorsport", principal: "l0xW3z", points: 143, podiums: 7, attendance: 7 },
-    { name: "Dragon_GhostBR", role: "Main Driver", team: "Rennsport Performance", principal: "DragonGhost", points: 109, podiums: 4, attendance: 6 },
-    { name: "Rod4YOUTzy", role: "Main Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 89, podiums: 3, attendance: 6 },
-    { name: "naelpro321", role: "Reserve Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 73, podiums: 2, attendance: 5 },
-    { name: "IVatticus", role: "Main Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 66, podiums: 2, attendance: 5 },
-    { name: "Cynotex", role: "Reserve Driver", team: "Crimson Motorsport", principal: "l0xW3z", points: 55, podiums: 2, attendance: 4 },
-    { name: "Speed4Rages1", role: "Main Driver", team: "Rennsport Performance", principal: "DragonGhost", points: 54, podiums: 1, attendance: 5 },
-    { name: "eveestreet", role: "Main Driver", team: "Rennsport Performance", principal: "DragonGhost", points: 38, podiums: 0, attendance: 5 },
-    { name: "leafXtra", role: "Main Driver", team: "Prisma Racing", principal: "Ejber", points: 32, podiums: 0, attendance: 7 },
-    { name: "yoelan3", role: "Reserve Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 29, podiums: 1, attendance: 2 },
-    { name: "Icequixy", role: "Reserve Driver", team: "Crimson Motorsport", principal: "l0xW3z", points: 18, podiums: 0, attendance: 2 },
-    { name: "agustin1608el", role: "Main Driver", team: "Prisma Racing", principal: "Ejber", points: 10, podiums: 0, attendance: 1 },
-    { name: "KingDimAlt", role: "Main Driver", team: "Prisma Racing", principal: "Ejber", points: 10, podiums: 0, attendance: 1 },
-    { name: "erby42", role: "Reserve Driver", team: "Prisma Racing", principal: "Ejber", points: 6, podiums: 0, attendance: 2 },
-    { name: "AlpiGame68", role: "Main Driver", team: "Atlas GP", principal: "vidihun", points: 6, podiums: 0, attendance: 1 },
-    { name: "kirillptts0", role: "Reserve Driver", team: "Prisma Racing", principal: "Ejber", points: 2.5, podiums: 0, attendance: 1 },
-    { name: "Simply_Moha", role: "Reserve Driver", team: "Crimson Motorsport", principal: "l0xW3z", points: 2, podiums: 0, attendance: 1 },
-    { name: "awsxcdrftfhhdsh", role: "Reserve Driver", team: "Atlas GP", principal: "vidihun", points: 1.5, podiums: 0, attendance: "-" },
-    { name: "Car5608Super", role: "Reserve Driver", team: "Rennsport Performance", principal: "DragonGhost", points: 0, podiums: 0, attendance: "-" },
-    { name: "Jasonarl2", role: "Reserve Driver", team: "Rennsport Performance", principal: "DragonGhost", points: 0, podiums: 0, attendance: "-" },
-    { name: "hard_zera921", role: "Reserve Driver", team: "Rennsport Performance", principal: "DragonGhost", points: 0, podiums: 0, attendance: 1 },
-    { name: "gogo_firendrob", role: "Main Driver", team: "Atlas GP", principal: "vidihun", points: 0, podiums: 0, attendance: "-" },
-    { name: "kolla19", role: "Main Driver", team: "Atlas GP", principal: "vidihun", points: 0, podiums: 0, attendance: 1 },
-    { name: "doggyuk", role: "Reserve Driver", team: "Atlas GP", principal: "vidihun", points: 0, podiums: 0, attendance: "-" },
-    { name: "XShadowLucaX", role: "Reserve Driver", team: "Atlas GP", principal: "vidihun", points: 0, podiums: 0, attendance: "-" },
-    { name: "romanreinsj", role: "Main Driver", team: "Prisma Racing", principal: "Ejber", points: 39, podiums: 1, attendance: 5 },
-    { name: "isaacggkk0", role: "Main Driver", team: "Crimson Motorsport", principal: "l0xW3z", points: 25, podiums: 0, attendance: 4 },
-    { name: "kyaeruu_1", role: "Reserve Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 21, podiums: 1, attendance: 1 },
-    { name: "vidihun", role: "Main Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 4, podiums: 0, attendance: 1 },
-    { name: "Sebaklasiu12", role: "Reserve Driver", team: "Keltech Racing Group", principal: "IVatticus", points: 4, podiums: 0, attendance: 1 }
-];
+let drivers = [];
+let races = [];
 
+async function init() {
+    drivers = await loadJSON("data/drivers.json");
+    races = await loadJSON("data/races.json");
+
+    renderDrivers(drivers);
+    renderTeams();
+    renderNextRace();
+}
+
+init();
 
 /* =========================
     ELEMENTOS DO DOM
@@ -165,62 +149,73 @@ renderDrivers(drivers);
     CONSTRUCTOR STANDINGS
 ========================= */
 
-const teams = {};
+function renderTeams() {
+    teamsContainer.innerHTML = "";
 
-drivers.forEach(d => {
-    if (!teams[d.team]) {
-        teams[d.team] = {
-            team: d.team,
-            teamPrincipal: d.principal,
-            points: 0,
-            mainDrivers: []
-        };
-    }
+    const teams = {};
 
-    teams[d.team].points += d.points;
+    drivers.forEach(d => {
+        if (!teams[d.team]) {
+            teams[d.team] = {
+                name: d.team,
+                teamPrincipal: d.principal,
+                points: 0,
+                podiums: 0,
+                mainDrivers: [],
+                reserveDrivers: []
+            };
+        }
 
-    if (d.role === "Main Driver") {
-        teams[d.team].mainDrivers.push(d.name);
-    }
-});
+        teams[d.team].points += d.points;
+        teams[d.team].podiums += d.podiums;
 
-Object.values(teams)
-    .sort((a, b) => b.points - a.points)
-    .forEach(t => {
-        const card = document.createElement("div");
-        card.classList.add("team");
-
-        card.style.setProperty(
-            "--team-color",
-            driverColors[t.team]?.["Main Driver"] || "#777"
-        );
-
-        card.innerHTML = `
-            <div class="teamHeader">
-                <strong>${t.team}</strong>
-                <span>${t.points} pts</span>
-            </div>
-            <div class="teamPrincipal">Principal: ${t.teamPrincipal}</div>
-            <div class="teamDrivers">
-                <strong>Main Drivers:</strong>
-                <ul>
-                    ${t.mainDrivers.map(d => `<li>${d}</li>`).join("")}
-                </ul>
-            </div>
-        `;
-
-        teamsContainer.appendChild(card);
+        if (d.role === "Main Driver") {
+            teams[d.team].mainDrivers.push(d.name);
+        } else {
+            teams[d.team].reserveDrivers.push(d.name);
+        }
     });
 
-const races = [
-    { name: "English GP", track: "Silverstone", date: "2026-01-17", map: "img/Silverstone.png" },
-    { name: "French GP", track: "Circuit Paul Ricard", date: "2026-01-24", map: "img/PaulRicard.png"},
-    { name: "German GP", track: "Hockenheim", date: "2026-01-31", map:"img/Hockenheim.png" },
-    { name: "Japanese GP", track: "Tsukuba", date: "2026-02-07", map: "img/Tsukuba.png" },
-    { name: "Japanese GP", track: "Fuji", date: "2026-02-14", map:"img/Fuji.png" },
-    { name: "United States GP", track: "Sebring", date: "2026-02-21", map: "img/Sebring.png" },
-    { name: "Italian GP", track: "Monza", date: "2026-02-28", map:"img/Monza.png" }
-]
+    Object.values(teams)
+        .sort((a, b) => b.points - a.points)
+        .forEach(t => {
+            const card = document.createElement("div");
+            card.classList.add("team");
+
+            card.style.setProperty(
+                "--team-color",
+                driverColors[t.name]?.["Main Driver"] || "#777"
+            );
+
+            card.innerHTML = `
+                <div class="teamHeader">
+                    <strong>${t.name}</strong>
+                    <span>${t.points} pts</span>
+                </div>
+
+                <div class="teamPrincipal">
+                    Principal: ${t.teamPrincipal}
+                </div>
+
+                <div class="teamDrivers">
+                    <strong>Main Drivers:</strong>
+                    <ul>
+                        ${t.mainDrivers.map(d => `<li>${d}</li>`).join("")}
+                    </ul>
+
+                    <strong>Reserve Drivers:</strong>
+                    <ul>
+                        ${t.reserveDrivers.map(d => `<li>${d}</li>`).join("")}
+                    </ul>
+                </div>
+            `;
+
+            teamsContainer.appendChild(card);
+        });
+}
+
+
+
 
 function getNextRace() {
     const today = new Date();
@@ -262,4 +257,5 @@ function renderNextRace() {
 }
 
 renderNextRace();
+
 
