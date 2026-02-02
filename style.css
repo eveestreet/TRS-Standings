@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #151414;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.driverStandings {
+    margin-bottom: 60px;
+}
+
+.sort-controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.sort-controls label {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.sort-controls select {
+    background: #111;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.drivers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.driver {
+    border-left: 6px solid var(--driver-color);
+    background: #111;
+    padding: 12px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.driver:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.7);
+}
+
+.driverName {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--driver-color);
+}
+
+
+.main-driver .driverRole {
+    font-weight: bold;
+}
+
+.reserve-driver {
+    opacity: 0.85;
+}
+
+
+.driverRole {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.driverTeam {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.driverPrincipal {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.driverStats {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.driverStats span {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.constructorStandings {
+    margin-top: 40px;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.team {
+    background: linear-gradient(145deg, #141414, #0a0a0a);
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    border-top: 4px solid var(--team-color);
+
+}
+
+.teamHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--team-color);
+}
+
+.teamHeader strong {
+    font-size: 17px;
+}
+
+.teamHeader span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.teamPrincipal {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #BBBBBB;
+    font-weight: bold;
+}
+
+.teamDrivers strong {
+    font-size: 14px;
+}
+
+.teamDrivers ul {
+    margin-top: 6px;
+    padding-left: 18px;
+}
+
+.teamDrivers li {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.nextRaceSection {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.nextRaceCard {
+    background: linear-gradient(145deg, #141414, #0a0a0a);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    border-left: 6px solid #ffd700;
+    padding: 18px;
+    border-radius: 14px;
+    max-width: 420px;
+}
+
+
+.raceName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.raceTrack {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    margin-bottom: 6px;
+}
+
+.raceDate {
+    font-size: 0.9rem;
+}
+
+.raceCountdown {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.raceMap {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #222;
+    background: #000;
+}
+
+@media (max-width: 600px) {
+
+    .drivers,
+    .teams {
+        grid-template-columns: 1fr;
+    }
+}

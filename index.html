@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRS Season Standings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>TRS Season Standings</h1>
+
+
+    <section class="driverStandings">
+        <h2>Driver Standings</h2>
+        <div class="sort-controls">
+            <label>
+                Sort drivers by:
+                <select id="driverSortStat">
+                    <option value="points">Points</option>
+                    <option value="podiums">Podiums</option>
+                    <option value="attendance">Attendance</option>
+                    <option value="teamName">Team + Name (A-z)</option>
+
+                </select>
+            </label>
+
+            <label>
+                Order:
+                <select id="driverSortOrder">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </label>
+        </div>
+        <div class="drivers"></div>
+    </section>
+
+    <section class="constructorStandings">
+        <h2>Constructor Standings</h2>
+        <div class="teams"></div>
+    </section>
+
+    <section class="nextRaceSection">
+        <h2>Next Race</h2>
+        <div id="nextRace" class="nextRaceCard"></div>
+    </section>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
