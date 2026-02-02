@@ -4,12 +4,12 @@
 
 const driverColors = {
     "Crimson Motorsport": {
-        "Main Driver": "#5A0028",
-        "Reserve Driver": "#5A0028"
-    },
-    "Keltech Racing Group": {
         "Main Driver": "#7F0000",
         "Reserve Driver": "#7F0000"
+    },
+    "Keltech Racing Group": {
+        "Main Driver": "#5A0028",
+        "Reserve Driver": "#5A0028"
     },
     "Atlas GP": {
         "Main Driver": "#E5E5E5",
@@ -257,5 +257,3 @@ function renderNextRace() {
 }
 
 renderNextRace();
-
-
