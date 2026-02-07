@@ -83,7 +83,7 @@ function renderDrivers(list) {
             <div class="driverStats">
                 <span>Points: ${d.points}</span>
                 <span>Podiums: ${d.podiums}</span>
-                <span>Attendance: ${d.attendance}</span>
+                <span>Race Wins: ${d.wins}</span>
             </div>
         `;
         if (d.role === "Main Driver")
@@ -94,13 +94,22 @@ function renderDrivers(list) {
             <div class="driverStats">
                 <span>Points: ${d.points}</span>
                 <span>Podiums: ${d.podiums}</span>
-                <span>Attendance: ${d.attendance}</span>
-            </div>
+                <span>Race Wins: ${d.wins}</span>
+                </div>
         `;
 
         driversContainer.appendChild(card);
     });
 }
+
+const info = document.getElementById("info");
+
+info.innerHTML = `
+    <div class="info">
+    <h3>Standings information relevant as of 01/17/2026 (kind of, spam t_programmar and Leo so they can fix that)</h3>
+    </div>
+`;
+
 
 
 /* =========================
@@ -161,6 +170,7 @@ function renderTeams() {
                 teamPrincipal: d.principal,
                 points: 0,
                 podiums: 0,
+                wins: 0,
                 mainDrivers: [],
                 reserveDrivers: []
             };
@@ -168,6 +178,7 @@ function renderTeams() {
 
         teams[d.team].points += d.points;
         teams[d.team].podiums += d.podiums;
+        teams[d.team].wins += d.wins;
 
         if (d.role === "Main Driver") {
             teams[d.team].mainDrivers.push(d.name);
@@ -191,6 +202,7 @@ function renderTeams() {
                 <div class="teamHeader">
                     <strong>${t.name}</strong>
                     <span>${t.points} pts</span>
+                    <span>${t.wins} wins</span>
                 </div>
 
                 <div class="teamPrincipal">
