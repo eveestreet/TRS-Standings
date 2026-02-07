@@ -17,7 +17,7 @@ const driverColors = {
     },
     "Rennsport Performance": {
         "Main Driver": "#C09F78",
-        "Reserve Driver": "#D8BC78"
+        "Reserve Driver": "#C09F78"
     },
     "Prisma Racing": {
         "Main Driver": "#1875C5",
