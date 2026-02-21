@@ -1,7 +1,3 @@
-/* =========================
-    CORES POR EQUIPE + ROLE
-========================= */
-
 const driverColors = {
     "Crimson Motorsport": {
         "Main Driver": "#7F0000",
@@ -26,9 +22,6 @@ const driverColors = {
 };
 
 
-/* =========================
-    DADOS DOS PILOTOS
-========================= */
 async function loadJSON(path) {
     const res = await fetch(path);
     return await res.json();
@@ -48,9 +41,6 @@ async function init() {
 
 init();
 
-/* =========================
-    ELEMENTOS DO DOM
-========================= */
 
 const driversContainer = document.querySelector(".drivers");
 const teamsContainer = document.querySelector(".teams");
@@ -58,10 +48,6 @@ const teamsContainer = document.querySelector(".teams");
 const driverSortStat = document.getElementById("driverSortStat");
 const driverSortOrder = document.getElementById("driverSortOrder");
 
-
-/* =========================
-    RENDER PILOTOS
-========================= */
 
 function renderDrivers(list) {
     driversContainer.innerHTML = "";
@@ -110,12 +96,6 @@ info.innerHTML = `
     </div>
 `;
 
-
-
-/* =========================
-    SORTING
-========================= */
-
 function sortDrivers() {
     const stat = driverSortStat.value;
     const order = driverSortOrder.value;
@@ -146,17 +126,7 @@ function sortDrivers() {
 driverSortStat.addEventListener("change", sortDrivers);
 driverSortOrder.addEventListener("change", sortDrivers);
 
-
-/* =========================
-    RENDER INICIAL
-========================= */
-
 renderDrivers(drivers);
-
-
-/* =========================
-    CONSTRUCTOR STANDINGS
-========================= */
 
 function renderTeams() {
     teamsContainer.innerHTML = "";
