@@ -4,8 +4,8 @@
         "role": "Main Driver",
         "team": "Crimson Motorsport",
         "principal": "Simply_Moha",
-        "points": 220,
-        "podiums": 9,
+        "points": 246,
+        "podiums": 10,
         "wins": 3
     },
     {
@@ -40,7 +40,7 @@
         "role": "Main Driver",
         "team": "Keltech Racing Group",
         "principal": "IVatticus",
-        "points": 105,
+        "points": 109,
         "podiums": 2,
         "wins": 1
     },
@@ -49,8 +49,8 @@
         "role": "Main Driver",
         "team": "Crimson Motorsport",
         "principal": "Simply_Moha",
-        "points": 89,
-        "podiums": 3,
+        "points": 111,
+        "podiums": 4,
         "wins": 2
     },
     {
@@ -67,7 +67,7 @@
         "role": "Main Driver",
         "team": "Rennsport Performance",
         "principal": "DragonGhost",
-        "points": 92,
+        "points": 112,
         "podiums": 0,
         "wins": 0
     },
@@ -76,7 +76,7 @@
         "role": "Main Driver",
         "team": "Prisma Racing",
         "principal": "Ejber",
-        "points": 49,
+        "points": 60,
         "podiums": 0,
         "wins": 0
     },
@@ -85,9 +85,9 @@
         "role": "Main Driver",
         "team": "Keltech Racing Group",
         "principal": "IVatticus",
-        "points": 106,
-        "podiums": 5,
-        "wins": 4
+        "points": 137,
+        "podiums": 6,
+        "wins": 5
     },
     {
         "name": "Icequixy",
@@ -112,7 +112,7 @@
         "role": "Main Driver",
         "team": "Prisma Racing",
         "principal": "Ejber",
-        "points": 42,
+        "points": 48,
         "podiums": 2,
         "wins": 0
     },
@@ -166,7 +166,7 @@
         "role": "Reserve Driver",
         "team": "Rennsport Performance",
         "principal": "DragonGhost",
-        "points": 32,
+        "points": 47,
         "podiums": 1,
         "wins": 0
     },
