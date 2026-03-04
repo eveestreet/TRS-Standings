@@ -1,0 +1,33 @@
+For the next developer who's perchance reading this, the website operates purely on Javascript, HTML and CSS, with the standings being done in a python data editor which is not (yet) posted on this repository.
+Below is the reference for points counting for races and sprint races, good luck and good job.
+Race
+
+1st: 20 Points
+2nd: 17 Points
+3rd: 15 Points
+4th: 12 Points
+5th: 10 Points
+6th: 8 Points
+7th: 6 Points
+8th: 5 Points
+9th: 4 Points
+10th: 3 Points
+11th: 2 Point
+12th: 1 Points
+13th and below gets 0 points
+Fastest Lap: 1 Point
+
+Sprint Race
+
+1st: 10 Points
+2nd: 9 Points
+3rd: 8 Points
+4th: 7 Points
+5th: 6 Points
+6th: 5 Points
+7th: 4 Points
+8th: 3 Points
+9th: 2 Points
+10th: 1 Points
+11th and Below: 0 Points
+No rewards for fastest lap
