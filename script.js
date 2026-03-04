@@ -1,23 +1,23 @@
 const driverColors = {
-    "Crimson Motorsport": {
-        "Main Driver": "#7F0000",
-        "Reserve Driver": "#7F0000"
+    "Honda Racing Team": {
+        "Main Driver": "#BE0D12",
+        "Reserve Driver": "#BE0D12"
     },
-    "Keltech Racing Group": {
-        "Main Driver": "#5A0028",
-        "Reserve Driver": "#5A0028"
+    "Veridian Racing": {
+        "Main Driver": "#017BB3",
+        "Reserve Driver": "#017BB3"
     },
-    "Atlas GP": {
-        "Main Driver": "#E5E5E5",
-        "Reserve Driver": "#E5E5E5"
+    "Makinami Holdings": {
+        "Main Driver": "#D20963",
+        "Reserve Driver": "#D20963"
     },
-    "Rennsport Performance": {
-        "Main Driver": "#C09F78",
-        "Reserve Driver": "#C09F78"
+    "Emy Creations": {
+        "Main Driver": "#9A01B1",
+        "Reserve Driver": "#9A01B1"
     },
-    "Prisma Racing": {
-        "Main Driver": "#1875C5",
-        "Reserve Driver": "#1875C5"
+    "Acura Motorsports": {
+        "Main Driver": "#FFFFFF",
+        "Reserve Driver": "#FFFFFF"
     }
 };
 
@@ -29,10 +29,12 @@ async function loadJSON(path) {
 
 let drivers = [];
 let races = [];
+let teamsData = [];
 
 async function init() {
     drivers = await loadJSON("data/drivers.json");
     races = await loadJSON("data/races.json");
+    teamsData = await loadJSON("data/teams.json");
 
     renderDrivers(drivers);
     renderTeams();
@@ -59,7 +61,7 @@ function renderDrivers(list) {
             d.role === "Main Driver" ? "main-driver" : "reserve-driver"
         );
 
-        const color = driverColors[d.team]?.[d.role] || "#777";
+        const color = driverColors[d.team]?.[d.role] || "#FFF";
         card.style.setProperty("--driver-color", color);
 
         card.innerHTML = `
@@ -92,7 +94,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 02/28/2026</h3>
+    <h3>Standings information relevant as of 03/04/2026</h3>
     </div>
 `;
 
@@ -131,63 +133,49 @@ renderDrivers(drivers);
 function renderTeams() {
     teamsContainer.innerHTML = "";
 
-    const teams = {};
-
-    drivers.forEach(d => {
-        if (!teams[d.team]) {
-            teams[d.team] = {
-                name: d.team,
-                teamPrincipal: d.principal,
-                points: 0,
-                podiums: 0,
-                wins: 0,
-                mainDrivers: [],
-                reserveDrivers: []
-            };
-        }
-
-        teams[d.team].points += d.points;
-        teams[d.team].podiums += d.podiums;
-        teams[d.team].wins += d.wins;
-
-        if (d.role === "Main Driver") {
-            teams[d.team].mainDrivers.push(d.name);
-        } else {
-            teams[d.team].reserveDrivers.push(d.name);
-        }
-    });
-
-    Object.values(teams)
+    teamsData
         .sort((a, b) => b.points - a.points)
-        .forEach(t => {
+        .forEach(team => {
+
+            // pega pilotos ativos dessa equipe
+            const activeDrivers = drivers.filter(d => d.team === team.name);
+
+            const mainDrivers = activeDrivers
+                .filter(d => d.role === "Main Driver")
+                .map(d => d.name);
+
+            const reserveDrivers = activeDrivers
+                .filter(d => d.role === "Reserve Driver")
+                .map(d => d.name);
+
             const card = document.createElement("div");
             card.classList.add("team");
 
             card.style.setProperty(
                 "--team-color",
-                driverColors[t.name]?.["Main Driver"] || "#777"
+                driverColors[team.name]?.["Main Driver"] || "#FFF"
             );
 
             card.innerHTML = `
                 <div class="teamHeader">
-                    <strong>${t.name}</strong>
-                    <span>${t.points} pts</span>
-                    <span>${t.wins} wins</span>
+                    <strong>${team.name}</strong>
+                    <span>${team.points} pts</span>
+                    <span>${team.wins} wins</span>
                 </div>
 
                 <div class="teamPrincipal">
-                    Principal: ${t.teamPrincipal}
+                    Principal: ${team.principal}
                 </div>
 
                 <div class="teamDrivers">
                     <strong>Main Drivers:</strong>
                     <ul>
-                        ${t.mainDrivers.map(d => `<li>${d}</li>`).join("")}
+                        ${mainDrivers.map(d => `<li>${d}</li>`).join("")}
                     </ul>
 
                     <strong>Reserve Drivers:</strong>
                     <ul>
-                        ${t.reserveDrivers.map(d => `<li>${d}</li>`).join("")}
+                        ${reserveDrivers.map(d => `<li>${d}</li>`).join("")}
                     </ul>
                 </div>
             `;
@@ -196,16 +184,19 @@ function renderTeams() {
         });
 }
 
-
-
-
 function getNextRace() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
+    const now = new Date();
 
     return races
-        .map(r => ({ ...r, dateObj: new Date(r.date) }))
-        .filter(r => r.dateObj >= today)
+        .map(r => {
+            const raceDate = new Date(r.date);
+
+            const deadline = new Date(raceDate);
+            deadline.setUTCHours(16, 0, 0, 0);
+
+            return { ...r, dateObj: raceDate, deadline };
+        })
+        .filter(r => r.deadline >= now)
         .sort((a, b) => a.dateObj - b.dateObj)[0];
 }
 
@@ -228,7 +219,7 @@ function renderNextRace() {
         <div class="raceTrack">${race.track}</div>
 
         <div class="raceDate">
-            ${race.dateObj.toLocaleDateString("en-GB")}
+            ${race.dateObj.toLocaleDateString("en-US")}
         </div>
 
         <div class="raceCountdown">

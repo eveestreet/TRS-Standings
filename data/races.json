@@ -1,9 +1,44 @@
 [
-    { "name": "English GP", "track": "Silverstone", "date": "2026-01-17", "map": "img/Silverstone.png" },
-    { "name": "French GP", "track": "Circuit Paul Ricard", "date": "2026-01-24", "map": "assets/img/PaulRicard.png"},
-    { "name": "German GP", "track": "Hockenheim", "date": "2026-01-31", "map":"assets/img/Hockenheim.png" },
-    { "name": "Japanese GP", "track": "Tsukuba", "date": "2026-02-07", "map": "assets/img/tsukuba.png" },
-    { "name": "Japanese GP", "track": "Fuji", "date": "2026-02-14", "map":"assets/img/Fuji.png" },
-    { "name": "United States GP", "track": "Sebring", "date": "2026-02-21", "map": "assets/img/Sebring.png" },
-    { "name": "Italian GP", "track": "Monza", "date": "2026-02-28", "map":"assets/img/Monza.png" }
+    {
+        "name": "English GP",
+        "track": "Silverstone",
+        "date": "TBD",
+        "map": "img/Silverstone.png"
+    },
+    {
+        "name": "French GP",
+        "track": "Circuit Paul Ricard",
+        "date": "TBD",
+        "map": "assets/img/PaulRicard.png"
+    },
+    {
+        "name": "German GP",
+        "track": "Hockenheim",
+        "date": "TBD",
+        "map": "assets/img/Hockenheim.png"
+    },
+    {
+        "name": "Japanese GP",
+        "track": "Tsukuba",
+        "date": "TBD",
+        "map": "assets/img/tsukuba.png"
+    },
+    {
+        "name": "Japanese GP",
+        "track": "Fuji",
+        "date": "TBD",
+        "map": "assets/img/Fuji.png"
+    },
+    {
+        "name": "United States GP",
+        "track": "Sebring",
+        "date": "TBD",
+        "map": "assets/img/Sebring.png"
+    },
+    {
+        "name": "Italian GP",
+        "track": "Monza",
+        "date": "TBD",
+        "map": "assets/img/Monza.png"
+    }
 ]

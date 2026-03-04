@@ -1,281 +1,75 @@
 [
     {
-        "name": "dogemastertrain",
+        "name": "eveestreet",
         "role": "Main Driver",
-        "team": "Crimson Motorsport",
-        "principal": "Simply_Moha",
-        "points": 246,
-        "podiums": 10,
-        "wins": 3
-    },
-    {
-        "name": "Dragon_GhostBR",
-        "role": "Main Driver",
-        "team": "Rennsport Performance",
-        "principal": "DragonGhost",
-        "points": 109,
-        "podiums": 4,
-        "wins": 1
+        "team": "Acura Motorsports",
+        "principal": "eveestreet",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0
     },
     {
         "name": "Rod4YOUTzy",
         "role": "Main Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 144,
-        "podiums": 6,
+        "team": "Honda Racing Team",
+        "principal": "Rod4YOUTzy",
+        "points": 0,
+        "podiums": 0,
         "wins": 0
-    },
-    {
-        "name": "naelpro321",
-        "role": "Reserve Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 79,
-        "podiums": 2,
-        "wins": 0
-    },
-    {
-        "name": "IVatticus",
-        "role": "Main Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 109,
-        "podiums": 2,
-        "wins": 1
     },
     {
         "name": "Cynotex",
         "role": "Main Driver",
-        "team": "Crimson Motorsport",
-        "principal": "Simply_Moha",
-        "points": 111,
-        "podiums": 4,
-        "wins": 2
-    },
-    {
-        "name": "Speed4Rages1",
-        "role": "Main Driver",
-        "team": "Rennsport Performance",
-        "principal": "DragonGhost",
-        "points": 66,
-        "podiums": 1,
-        "wins": 0
-    },
-    {
-        "name": "eveestreet",
-        "role": "Main Driver",
-        "team": "Rennsport Performance",
-        "principal": "DragonGhost",
-        "points": 112,
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 0,
         "podiums": 0,
         "wins": 0
     },
     {
-        "name": "leafXtra",
+        "name": "Aur0raTheRobot",
         "role": "Main Driver",
-        "team": "Prisma Racing",
-        "principal": "Ejber",
-        "points": 60,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "yoelan3",
-        "role": "Main Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 137,
-        "podiums": 6,
-        "wins": 5
-    },
-    {
-        "name": "Icequixy",
-        "role": "Reserve Driver",
-        "team": "Crimson Motorsport",
-        "principal": "Simply_Moha",
-        "points": 18,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "agustin1608el",
-        "role": "Main Driver",
-        "team": "Prisma Racing",
-        "principal": "Ejber",
-        "points": 10,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "KingDimAlt",
-        "role": "Main Driver",
-        "team": "Prisma Racing",
-        "principal": "Ejber",
-        "points": 48,
-        "podiums": 2,
-        "wins": 0
-    },
-    {
-        "name": "erby42 (retired)",
-        "role": "Reserve Driver",
-        "team": "Prisma Racing",
-        "principal": "Ejber",
-        "points": 6,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "AlpiGame68",
-        "role": "Main Driver",
-        "team": "Atlas GP",
-        "principal": "Happy",
-        "points": 18,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "kirillptts0",
-        "role": "Reserve Driver",
-        "team": "Prisma Racing",
-        "principal": "Ejber",
-        "points": 2.5,
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 0,
         "podiums": 0,
         "wins": 0
     },
     {
         "name": "Simply_Moha",
         "role": "Reserve Driver",
-        "team": "Crimson Motorsport",
-        "principal": "Simply_Moha",
-        "points": 2,
+        "team": "Honda Racing Team",
+        "principal": "Rod4YOUTzy",
+        "points": 0,
         "podiums": 0,
         "wins": 0
     },
     {
-        "name": "awsxcdrftfhhdsh",
+        "name": "crabie_Finnie18703",
         "role": "Main Driver",
-        "team": "Atlas GP",
-        "principal": "Happy",
-        "points": 1.5,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "Car5678Super",
-        "role": "Reserve Driver",
-        "team": "Rennsport Performance",
-        "principal": "DragonGhost",
-        "points": 47,
-        "podiums": 1,
-        "wins": 0
-    },
-    {
-        "name": "Jasonarl2",
-        "role": "Reserve Driver",
-        "team": "Rennsport Performance",
-        "principal": "DragonGhost",
+        "team": "Makinami Holdings",
+        "principal": "LilliacKyoto",
         "points": 0,
         "podiums": 0,
         "wins": 0
     },
     {
-        "name": "hard_zera921",
-        "role": "Reserve Driver",
-        "team": "Rennsport Performance",
-        "principal": "DragonGhost",
-        "points": 15,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "gogo_firendrob",
+        "name": "LilliacKyoto",
         "role": "Main Driver",
-        "team": "Atlas GP",
-        "principal": "Happy",
+        "team": "Makinami Holdings",
+        "principal": "LilliacKyoto",
         "points": 0,
         "podiums": 0,
         "wins": 0
     },
     {
-        "name": "kolla19",
+        "name": "erbry42",
         "role": "Reserve Driver",
-        "team": "Atlas GP",
-        "principal": "Happy",
+        "team": "Veridian Racing",
+        "principal": "erbry42",
         "points": 0,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "doggyuk",
-        "role": "Reserve Driver",
-        "team": "Atlas GP",
-        "principal": "Happy",
-        "points": 0,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "XShadowLucaX",
-        "role": "Reserve Driver",
-        "team": "Atlas GP",
-        "principal": "Happy",
-        "points": 0,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "romanreinsj",
-        "role": "Reserve Driver",
-        "team": "Prisma Racing",
-        "principal": "Ejber",
-        "points": 39,
-        "podiums": 1,
-        "wins": 0
-    },
-    {
-        "name": "isaacggkk0",
-        "role": "Main Driver",
-        "team": "Crimson Motorsport",
-        "principal": "Simply_Moha",
-        "points": 25,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "kyaeruu_1 (retired driver)",
-        "role": "Reserve Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 20,
-        "podiums": 1,
-        "wins": 1
-    },
-    {
-        "name": "Vidihun (retired driver)",
-        "role": "Reserve Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 4,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "Sebaklasiu12 (retired driver)",
-        "role": "Reserve Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 4,
-        "podiums": 0,
-        "wins": 0
-    },
-    {
-        "name": "ItsMyJokes96",
-        "role": "Reserve Driver",
-        "team": "Keltech Racing Group",
-        "principal": "IVatticus",
-        "points": 12,
         "podiums": 0,
         "wins": 0
     }
+
 ]
