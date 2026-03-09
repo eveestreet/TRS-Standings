@@ -72,6 +72,7 @@ function renderDrivers(list) {
                 <span>Points: ${d.points}</span>
                 <span>Podiums: ${d.podiums}</span>
                 <span>Race Wins: ${d.wins}</span>
+                <span>Race Attendance: ${d.attendance}</span>
             </div>
         `;
         if (d.role === "Main Driver")
@@ -83,6 +84,7 @@ function renderDrivers(list) {
                 <span>Points: ${d.points}</span>
                 <span>Podiums: ${d.podiums}</span>
                 <span>Race Wins: ${d.wins}</span>
+                <span>Race Attendance: ${d.attendance}</span>
                 </div>
         `;
 
@@ -94,7 +96,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 03/04/2026</h3>
+    <h3>Standings information relevant as of 03/09/2026</h3>
     </div>
 `;
 
@@ -113,6 +115,12 @@ function sortDrivers() {
 
             const nameCompare = a.name.localeCompare(b.name);
             return order === "asc" ? nameCompare : -nameCompare;
+            renderDrivers(sorted);
+        }
+        if (stat === "driverName") {
+            const nameCompare = a.name.localeCompare(b.name);
+            return order === "asc" ? nameCompare : -nameCompare;
+            renderDrivers(sorted);
         }
 
         // NUMÉRICOS

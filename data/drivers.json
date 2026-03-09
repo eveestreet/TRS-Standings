@@ -6,7 +6,8 @@
         "principal": "eveestreet",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "Rod4YOUTzy",
@@ -15,7 +16,8 @@
         "principal": "Rod4YOUTzy",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "Cynotex",
@@ -24,7 +26,8 @@
         "principal": "Cynotex",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "Aur0raTheRobot",
@@ -33,7 +36,8 @@
         "principal": "Cynotex",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "Simply_Moha",
@@ -42,7 +46,8 @@
         "principal": "Rod4YOUTzy",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "crabie_Finnie18703",
@@ -51,7 +56,8 @@
         "principal": "LilliacKyoto",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "LilliacKyoto",
@@ -60,7 +66,8 @@
         "principal": "LilliacKyoto",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "erbry42",
@@ -69,7 +76,157 @@
         "principal": "erbry42",
         "points": 0,
         "podiums": 0,
-        "wins": 0
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "baconsuperhairgod",
+        "role": "Reserve Driver",
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "dogemastertrain",
+        "role": "Main Driver",
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "IVatticus",
+        "role": "Reserve Driver",
+        "team": "Honda Racing Team",
+        "principal": "Rod4YOUTzy",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "awsxcdrftfhhdsh",
+        "role": "Reserve Driver",
+        "team": "Veridian Racing",
+        "principal": "erbry42",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "Dragon_GhostBR",
+        "team": "Acura Motorsports",
+        "role": "Main Driver",
+        "principal": "eveestreet",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "yoelan3",
+        "role": "Main Driver",
+        "team": "Acura Motorsports",
+        "principal": "eveestreet",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "Car5678Super",
+        "role": "Reserve Driver",
+        "team": "Acura Motorsports",
+        "principal": "eveestreet",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "leafXtra",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "Rod4YOUTzy",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "doggyuk1",
+        "role": "Reserve Driver",
+        "team": "Honda Racing Team",
+        "principal": "Rod4YOUTzy",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "jiwjiw60560",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "Rod4YOUTzy",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "naelpro321",
+        "role": "Reserve Driver",
+        "team": "Acura Motorsports",
+        "principal": "eveestreet",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "KingDimAlt",
+        "role": "Main Driver",
+        "team": "Veridian Racing",
+        "principal": "erbry42",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "agustin1608el",
+        "role": "Reserve Driver",
+        "team": "Veridian Racing",
+        "principal": "erbry42",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name":"lplix3000",
+        "role":"Main Driver",
+        "team":"Veridian Racing",
+        "principal":"erbry42",
+        "points":0,
+        "podiums":0,
+        "wins":0,
+        "attendance":0
+    },
+    {
+        "name": "misiek0843",
+        "role": "Main Driver",
+        "team":"Veridian Racing",
+        "principal":"erbry42",
+        "points":0,
+        "podiums":0,
+        "wins":0,
+        "attendance":0
     }
-
 ]
