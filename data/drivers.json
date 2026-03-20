@@ -70,16 +70,6 @@
         "attendance": 0
     },
     {
-        "name": "erbry42",
-        "role": "Reserve Driver",
-        "team": "Veridian Racing",
-        "principal": "erbry42",
-        "points": 0,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 0
-    },
-    {
         "name": "baconsuperhairgod",
         "role": "Reserve Driver",
         "team": "Emy Creations",
@@ -210,8 +200,8 @@
         "attendance": 0
     },
     {
-        "name":"lplix3000",
-        "role":"Main Driver",
+        "name":"saab.9_5",
+        "role":"Reserve Driver",
         "team":"Veridian Racing",
         "principal":"erbry42",
         "points":0,
@@ -228,5 +218,45 @@
         "podiums":0,
         "wins":0,
         "attendance":0
+    },
+    {
+        "name": "romanreinsj",
+        "role": "Main Driver",
+        "team":"Veridian Racing",
+        "principal":"erbry42",
+        "points":0,
+        "podiums":0,
+        "wins":0,
+        "attendance":0
+    },
+    {
+        "name": "Womp_Womp0165",
+        "role": "Reserve Driver",
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "ijn_yamato",
+        "role": "Main Driver",
+        "team": "Makinami Holdings",
+        "principal": "LilliacKyoto",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "isaacggkk0",
+        "role": "Reserve Driver",
+        "team": "Makinami Holdings",
+        "principal": "LilliacKyoto",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
     }
 ]
