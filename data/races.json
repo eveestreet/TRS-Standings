@@ -6,39 +6,39 @@
         "map": "assets/img/tsukuba.png"
     },
     {
-        "name": "German GP",
-        "track": "Hockenheim",
-        "date": "03/28/2026",
-        "map": "assets/img/Hockenheim.png"
-    },
-    {
         "name": "United States GP",
         "track": "Sebring",
-        "date": "04/04/2026",
+        "date": "03/28/2026",
         "map": "assets/img/Sebring.png"
     },
     {
         "name": "Italian GP",
         "track": "Monza",
-        "date": "04/11/2026",
+        "date": "04/04/2026",
         "map": "assets/img/Monza.png"
     },
     {
         "name": "French GP",
         "track": "Circuit Paul Ricard",
-        "date": "04/18/2026",
+        "date": "04/11/2026",
         "map": "assets/img/PaulRicard.png"
     },
     {
         "name": "English GP",
         "track": "Silverstone",
-        "date": "04/25/2026",
+        "date": "04/18/2026",
         "map": "assets/img/Silverstone.png"
     },
     {
         "name": "Japanese GP",
         "track": "Fuji",
-        "date": "05/02/2026",
+        "date": "04/25/2026",
         "map": "assets/img/Fuji.png"
+    },
+    {
+        "name": "German GP",
+        "track": "Hockenheim",
+        "date": "05/02/2026",
+        "map": "assets/img/Hockenheim.png"
     }
 ]
