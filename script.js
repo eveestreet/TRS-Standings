@@ -96,7 +96,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 03/21/2026</h3>
+    <h3>Standings information relevant as of 03/28/2026</h3>
     </div>
 `;
 
@@ -200,7 +200,7 @@ function getNextRace() {
             const raceDate = new Date(r.date);
 
             const deadline = new Date(raceDate);
-            deadline.setUTCHours(16, 0, 0, 0);
+            deadline.setUTCHours(15, 0, 0, 0);
 
             return { ...r, dateObj: raceDate, deadline };
         })

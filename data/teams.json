@@ -2,31 +2,31 @@
     {
         "name": "Honda Racing Team",
         "principal": "Rod4YOUTzy",
-        "points": 26,
+        "points": 72,
         "wins": 0
     },
     {
         "name": "Veridian Racing",
         "principal": "erbry42",
-        "points": 4,
+        "points": 17,
         "wins": 0
     },
     {
         "name": "Makinami Holdings",
         "principal": "LilliacKyoto",
-        "points": 19,
+        "points": 27,
         "wins": 0
     },
     {
         "name": "Emy Creations",
         "principal": "Cynotex",
-        "points": 28,
+        "points": 75,
         "wins": 0
     },
     {
         "name": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 27,
-        "wins": 1
+        "points": 71,
+        "wins": 2
     }
 ]
