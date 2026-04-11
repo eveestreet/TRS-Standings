@@ -24,10 +24,10 @@
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 48,
-        "podiums": 2,
+        "points": 63,
+        "podiums": 3,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "Aur0raTheRobot",
@@ -53,17 +53,17 @@
         "name": "crabie_Finnie18703",
         "role": "Main Driver",
         "team": "Makinami Holdings",
-        "principal": "LilliacKyoto",
-        "points": 18,
+        "principal": "l0xW3z",
+        "points": 27,
         "podiums": 1,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
-        "name": "LilliacKyoto",
+        "name": "l0xW3z",
         "role": "Main Driver",
         "team": "Makinami Holdings",
-        "principal": "LilliacKyoto",
+        "principal": "l0xW3z",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -74,30 +74,30 @@
         "role": "Reserve Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 0,
+        "points": 2,
         "podiums": 0,
         "wins": 0,
-        "attendance": 0
+        "attendance": 1
     },
     {
         "name": "dogemastertrain",
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 38,
+        "points": 50,
         "podiums": 0,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "IVatticus",
         "role": "Reserve Driver",
         "team": "Honda Racing Team",
         "principal": "Rod4YOUTzy",
-        "points": 16,
+        "points": 21,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "awsxcdrftfhhdsh",
@@ -114,30 +114,30 @@
         "team": "Acura Motorsports",
         "role": "Main Driver",
         "principal": "eveestreet",
-        "points": 32,
+        "points": 42,
         "podiums": 1,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "yoelan3",
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 71,
-        "podiums": 3,
-        "wins": 3,
-        "attendance": 3
+        "points": 91,
+        "podiums": 4,
+        "wins": 4,
+        "attendance": 4
     },
     {
         "name": "Car5678Super",
         "role": "Reserve Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 5,
+        "points": 8,
         "podiums": 0,
         "wins": 0,
-        "attendance": 1
+        "attendance": 2
     },
     {
         "name": "leafXtra",
@@ -164,10 +164,10 @@
         "role": "Main Driver",
         "team": "Honda Racing Team",
         "principal": "Rod4YOUTzy",
-        "points": 50,
-        "podiums": 2,
+        "points": 67,
+        "podiums": 3,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "naelpro321",
@@ -180,7 +180,7 @@
         "attendance": 0
     },
     {
-        "name": "KingDimAlt",
+        "name": "AlpiGame68",
         "role": "Main Driver",
         "team": "Veridian Racing",
         "principal": "erbry42",
@@ -243,7 +243,7 @@
         "name": "IJN_Yamato",
         "role": "Main Driver",
         "team": "Makinami Holdings",
-        "principal": "LilliacKyoto",
+        "principal": "l0xW3z",
         "points": 7,
         "podiums": 0,
         "wins": 0,
@@ -253,20 +253,20 @@
         "name": "isaacggkk0",
         "role": "Reserve Driver",
         "team": "Makinami Holdings",
-        "principal": "LilliacKyoto",
-        "points": 0,
+        "principal": "l0xW3z",
+        "points": 4,
         "podiums": 0,
         "wins": 0,
-        "attendance": 0
+        "attendance": 1
     },
     {
         "name": "DINOCHAMPION",
         "role": "Main Driver",
         "team": "Makinami Holdings",
-        "principal": "LilliacKyoto",
-        "points": 17,
+        "principal": "l0xW3z",
+        "points": 23,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     }
 ]
