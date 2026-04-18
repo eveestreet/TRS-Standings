@@ -1,6 +1,6 @@
 [
     {
-        "name": "Japanese GP",
+        "name": "Japanese GP (Tsukuba)",
         "track": "Tsukuba",
         "date": "05/23/2026",
         "map": "assets/img/tsukuba.png"
@@ -30,7 +30,7 @@
         "map": "assets/img/Silverstone.png"
     },
     {
-        "name": "Japanese GP",
+        "name": "Japanese GP (Fuji International Speedway)",
         "track": "Fuji",
         "date": "04/25/2026",
         "map": "assets/img/Fuji.png"

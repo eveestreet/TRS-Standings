@@ -1,0 +1,66 @@
+[
+    {
+        "race": "Japanese GP (Tsukuba)",
+        "podium":["Yoelan3", "jiwjiw60560", "crabie_Finnie18703"]
+    },
+    {
+        "race": "United States GP",
+        "podium":["Yoelan3", "Cynotex", "jiwjiw60560"]
+    },
+    {
+        "race": "Italian GP",
+        "podium":["Yoelan3", "Dragon_GhostBR", "Cynotex"]
+    },
+    {
+        "race": "French GP",
+        "podium":["Yoelan3", "jiwjiw60560", "Cynotex"]
+    },
+    {
+        "race": "English GP",
+        "podium":["Yoelan3", "Cynotex", "dogemastertrain"]
+    },
+    {
+        "race": "Japanese GP (Fuji International Speedway)",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "German GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "Belgian GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "Japanese GP (Tsukuba)",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "United States GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "Italian GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "French GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "English GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "Japanese GP (Fuji International Speedway)",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "German GP",
+        "podium":["", "", ""]
+    },
+    {
+        "race": "Belgian GP",
+        "podium":["", "", ""]
+    }
+]

@@ -170,8 +170,8 @@ h2 {
     margin-bottom: 4px;
 }
 
-#info{
-    margin-top:20px;
+#info {
+    margin-top: 20px;
 }
 
 .nextRaceSection {
@@ -217,6 +217,61 @@ h2 {
     margin-bottom: 10px;
     border: 2px solid #222;
     background: #000;
+}
+
+.resultsSection {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.resultCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+}
+
+.resultCard {
+    background: linear-gradient(145deg, #141414, #0a0a0a);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    border-left: 6px solid #00ff33;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.resultRace {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.resultPodium {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.podium1 {
+    color: gold;
+    font-weight: bold;
+}
+
+.podium2 {
+    color: silver;
+}
+
+.podium3 {
+    color: #cd7f32;
+}
+.undefCard{
+    background: linear-gradient(145deg, #141414, #0a0a0a);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    border-left: 6px solid #FF2222;
+    padding: 18px;
+    border-radius: 14px;
+}
+.half{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {

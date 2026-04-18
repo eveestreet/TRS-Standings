@@ -30,15 +30,18 @@ async function loadJSON(path) {
 let drivers = [];
 let races = [];
 let teamsData = [];
+let podiums = []
 
 async function init() {
     drivers = await loadJSON("data/drivers.json");
     races = await loadJSON("data/races.json");
     teamsData = await loadJSON("data/teams.json");
+    podiums = await loadJSON("data/results.json");
 
     renderDrivers(drivers);
     renderTeams();
     renderNextRace();
+    renderPodiums();
 }
 
 init();
@@ -237,5 +240,64 @@ function renderNextRace() {
     `;
 }
 
-renderNextRace();
+function renderPodiums() {
 
+    const firstHalfContainer = document.getElementById("resultsFHalf");
+    const secondHalfContainer = document.getElementById("resultsSecHalf");
+
+    firstHalfContainer.innerHTML = "";
+    secondHalfContainer.innerHTML = "";
+
+    renderHalf(podiums.slice(0, 8), firstHalfContainer, 1);
+    renderHalf(podiums.slice(8, 16), secondHalfContainer, 9);
+}
+
+function renderHalf(list, container, startRound) {
+
+    list.forEach((race, index) => {
+
+        const hasResult =
+            race.podium[0] !== "" &&
+            race.podium[1] !== "" &&
+            race.podium[2] !== "";
+
+        const card = document.createElement("div");
+
+        if (hasResult) {
+
+            card.classList.add("resultCard");
+
+            card.innerHTML = `
+                <div class="resultRace">
+                    Round ${startRound + index} — ${race.race}
+                </div>
+
+                <div class="resultPodium">
+                    <div class="podium1">🥇 ${race.podium[0]}</div>
+                    <div class="podium2">🥈 ${race.podium[1]}</div>
+                    <div class="podium3">🥉 ${race.podium[2]}</div>
+                </div>
+            `;
+
+        } else {
+
+            card.classList.add("undefCard");
+
+            card.innerHTML = `
+                <div class="resultRace">
+                    Round ${startRound + index} — ${race.race}
+                </div>
+
+                <div class="resultPodium">
+                    <div class="podium1">-</div>
+                    <div class="podium2">-</div>
+                    <div class="podium3">-</div>
+                </div>
+            `;
+
+        }
+
+        container.appendChild(card);
+    });
+
+}
