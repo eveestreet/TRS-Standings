@@ -96,7 +96,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 04/11/2026</h3>
+    <h3>Standings information relevant as of 04/18/2026</h3>
     </div>
 `;
 
@@ -238,3 +238,4 @@ function renderNextRace() {
 }
 
 renderNextRace();
+
