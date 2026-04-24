@@ -276,6 +276,7 @@ function renderHalf(list, container, startRound) {
                     <div class="podium1">🥇 ${race.podium[0]}</div>
                     <div class="podium2">🥈 ${race.podium[1]}</div>
                     <div class="podium3">🥉 ${race.podium[2]}</div>
+                    <div class="fastestLap"> 🟪 Fastest Lap: ${race.fastestLap}</div>
                 </div>
             `;
 
@@ -289,9 +290,10 @@ function renderHalf(list, container, startRound) {
                 </div>
 
                 <div class="resultPodium">
-                    <div class="podium1">-</div>
-                    <div class="podium2">-</div>
-                    <div class="podium3">-</div>
+                    <div class="podium1">🥇</div>
+                    <div class="podium2">🥈</div>
+                    <div class="podium3">🥉</div>
+                    <div class="fastestLap">🟪</div>
                 </div>
             `;
 

@@ -262,6 +262,9 @@ h2 {
 .podium3 {
     color: #cd7f32;
 }
+.fastestLap{
+    color: #ae00ff
+}
 .undefCard{
     background: linear-gradient(145deg, #141414, #0a0a0a);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);

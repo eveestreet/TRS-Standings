@@ -1,55 +1,68 @@
 [
     {
         "race": "Japanese GP (Tsukuba)",
-        "podium":["Yoelan3", "jiwjiw60560", "crabie_Finnie18703"]
+        "podium":["yoelan3", "jiwjiw60560", "crabie_Finnie18703"],
+        "fastestLap":["crabie_Finnie18703"]
     },
     {
         "race": "United States GP",
-        "podium":["Yoelan3", "Cynotex", "jiwjiw60560"]
+        "podium":["yoelan3", "Cynotex", "jiwjiw60560"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "Italian GP",
-        "podium":["Yoelan3", "Dragon_GhostBR", "Cynotex"]
+        "podium":["yoelan3", "Dragon_GhostBR", "Cynotex"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "French GP",
-        "podium":["Yoelan3", "jiwjiw60560", "Cynotex"]
+        "podium":["yoelan3", "jiwjiw60560", "Cynotex"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "English GP",
-        "podium":["Yoelan3", "Cynotex", "dogemastertrain"]
+        "podium":["yoelan3", "Cynotex", "dogemastertrain"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "Japanese GP (Fuji International Speedway)",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "German GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "Belgian GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "Japanese GP (Tsukuba)",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "United States GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "Italian GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "French GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "English GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "Japanese GP (Fuji International Speedway)",
@@ -57,10 +70,12 @@
     },
     {
         "race": "German GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     },
     {
         "race": "Belgian GP",
-        "podium":["", "", ""]
+        "podium":["", "", ""],
+        "fastestLap":[]
     }
 ]
