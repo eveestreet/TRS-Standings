@@ -258,5 +258,15 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 4
+    },
+    {
+        "name": "lltenryujinll",
+        "role":"Reserve Driver",
+        "team":"Emy Creations",
+        "principal":"Cynotex",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
     }
 ]
