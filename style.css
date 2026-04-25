@@ -262,20 +262,38 @@ h2 {
 .podium3 {
     color: #cd7f32;
 }
-.fastestLap{
+
+.fastestLap {
     color: #ae00ff
 }
-.undefCard{
+
+.undefCard {
     background: linear-gradient(145deg, #141414, #0a0a0a);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
     border-left: 6px solid #FF2222;
     padding: 18px;
     border-radius: 14px;
 }
-.half{
+
+.half {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+.author {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.author a {
+    text-decoration: none;
+    color: #fff;
+}
+.author :hover{
+    color: #aaa
+}
+
 
 @media (max-width: 600px) {
 

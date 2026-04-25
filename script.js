@@ -38,7 +38,7 @@ async function init() {
     teamsData = await loadJSON("data/teams.json");
     podiums = await loadJSON("data/results.json");
 
-    renderDrivers(drivers);
+    sortDrivers();
     renderTeams();
     renderNextRace();
     renderPodiums();
@@ -99,7 +99,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 04/18/2026</h3>
+    <h3>Standings information relevant as of 04/25/2026</h3>
     </div>
 `;
 
@@ -109,28 +109,39 @@ function sortDrivers() {
 
     const sorted = [...drivers].sort((a, b) => {
 
-        // TEAM + NAME (A-Z)
+        // Ordenar por equipe + nome
         if (stat === "teamName") {
             const teamCompare = a.team.localeCompare(b.team);
+
             if (teamCompare !== 0) {
-                return order === "asc" ? teamCompare : -teamCompare;
+                return order === "asc"
+                    ? teamCompare
+                    : -teamCompare;
             }
 
             const nameCompare = a.name.localeCompare(b.name);
-            return order === "asc" ? nameCompare : -nameCompare;
-            renderDrivers(sorted);
-        }
-        if (stat === "driverName") {
-            const nameCompare = a.name.localeCompare(b.name);
-            return order === "asc" ? nameCompare : -nameCompare;
-            renderDrivers(sorted);
+
+            return order === "asc"
+                ? nameCompare
+                : -nameCompare;
         }
 
-        // NUMÉRICOS
+        // Ordenar por nome do piloto
+        if (stat === "driverName") {
+            const nameCompare = a.name.localeCompare(b.name);
+
+            return order === "asc"
+                ? nameCompare
+                : -nameCompare;
+        }
+
+        // Estatísticas numéricas
         const aVal = a[stat] === "-" ? 0 : a[stat];
         const bVal = b[stat] === "-" ? 0 : b[stat];
 
-        return order === "asc" ? aVal - bVal : bVal - aVal;
+        return order === "asc"
+            ? aVal - bVal
+            : bVal - aVal;
     });
 
     renderDrivers(sorted);
@@ -138,8 +149,6 @@ function sortDrivers() {
 
 driverSortStat.addEventListener("change", sortDrivers);
 driverSortOrder.addEventListener("change", sortDrivers);
-
-renderDrivers(drivers);
 
 function renderTeams() {
     teamsContainer.innerHTML = "";
