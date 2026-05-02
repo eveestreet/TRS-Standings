@@ -4,10 +4,10 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 23,
+        "points": 36,
         "podiums": 0,
         "wins": 0,
-        "attendance": 4
+        "attendance": 5
     },
     {
         "name": "Cynotex",
@@ -27,13 +27,13 @@
         "points": 38,
         "podiums": 0,
         "wins": 0,
-        "attendance": 4
+        "attendance": 5
     },
     {
         "name": "Simply_Moha",
         "role": "Reserve Driver",
         "team": "Honda Racing Team",
-        "principal": "Rod4YOUTzy",
+        "principal": "IVatticus",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -44,10 +44,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 45,
-        "podiums": 2,
+        "points": 62,
+        "podiums": 3,
         "wins": 0,
-        "attendance": 6
+        "attendance": 7
     },
     {
         "name": "l0xW3z",
@@ -74,7 +74,7 @@
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 65,
+        "points": 63,
         "podiums": 1,
         "wins": 0,
         "attendance": 5
@@ -83,17 +83,17 @@
         "name": "IVatticus",
         "role": "Reserve Driver",
         "team": "Honda Racing Team",
-        "principal": "Rod4YOUTzy",
-        "points": 27,
+        "principal": "IVatticus",
+        "points": 31,
         "podiums": 0,
         "wins": 0,
-        "attendance": 5
+        "attendance": 6
     },
     {
         "name": "awsxcdrftfhhdsh",
         "role": "Reserve Driver",
         "team": "Veridian Racing",
-        "principal": "erbry42",
+        "principal": "weeeeeeeethebeas",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -114,26 +114,26 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 132,
-        "podiums": 6,
-        "wins": 6,
-        "attendance": 6
+        "points": 162,
+        "podiums": 7,
+        "wins": 7,
+        "attendance": 7
     },
     {
         "name": "Car5678Super",
         "role": "Reserve Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 8,
+        "points": 14,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "leafXtra",
         "role": "Main Driver",
         "team": "Honda Racing Team",
-        "principal": "Rod4YOUTzy",
+        "principal": "IVatticus",
         "points": 5,
         "podiums": 0,
         "wins": 0,
@@ -143,21 +143,21 @@
         "name": "doggyuk1",
         "role": "Reserve Driver",
         "team": "Honda Racing Team",
-        "principal": "Rod4YOUTzy",
+        "principal": "IVatticus",
         "points": 6,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 1
     },
     {
         "name": "jiwjiw60560",
         "role": "Main Driver",
         "team": "Honda Racing Team",
-        "principal": "Rod4YOUTzy",
-        "points": 67,
+        "principal": "IVatticus",
+        "points": 91,
         "podiums": 3,
         "wins": 0,
-        "attendance": 4
+        "attendance": 5
     },
     {
         "name": "naelpro321",
@@ -173,7 +173,7 @@
         "name": "AlpiGame68",
         "role": "Main Driver",
         "team": "Veridian Racing",
-        "principal": "erbry42",
+        "principal": "weeeeeeeethebeas",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -183,7 +183,7 @@
         "name": "agustin1608el",
         "role": "Reserve Driver",
         "team": "Veridian Racing",
-        "principal": "erbry42",
+        "principal": "weeeeeeeethebeas",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -193,7 +193,7 @@
         "name": "2011ToyotaCamryXLE",
         "role": "Reserve Driver",
         "team": "Veridian Racing",
-        "principal": "erbry42",
+        "principal": "weeeeeeeethebeas",
         "points": 19,
         "podiums": 0,
         "wins": 0,
@@ -203,7 +203,7 @@
         "name": "misiek0843",
         "role": "Main Driver",
         "team": "Veridian Racing",
-        "principal": "erbry42",
+        "principal": "weeeeeeeethebeas",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -213,17 +213,7 @@
         "name": "romanreinsj",
         "role": "Main Driver",
         "team": "Veridian Racing",
-        "principal": "erbry42",
-        "points": 0,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 1
-    },
-    {
-        "name": "Womp_Womp0165",
-        "role": "Reserve Driver",
-        "team": "Emy Creations",
-        "principal": "Cynotex",
+        "principal": "weeeeeeeethebeas",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -244,7 +234,7 @@
         "role": "Reserve Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 4,
+        "points": 7,
         "podiums": 0,
         "wins": 0,
         "attendance": 1
@@ -254,10 +244,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 43,
-        "podiums": 0,
+        "points": 65,
+        "podiums": 1,
         "wins": 0,
-        "attendance": 5
+        "attendance": 6
     },
     {
         "name": "lltenryujinll",
@@ -268,5 +258,35 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 0
+    },
+    {
+        "name": "fxbxzx",
+        "role": "Reserve Driver",
+        "team": "Makinami Holdings",
+        "principal": "Cynotex",
+        "points": 18,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "HAYAC122",
+        "role": "Main Driver",
+        "team": "Veridian Racing",
+        "principal": "weeeeeeeethebeas",
+        "points": 7,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "corentin080000",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "IVatticus",
+        "points": 7,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
     }
 ]
