@@ -36,8 +36,8 @@
     },
     {
         "race": "Belgian GP",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["Cynotex", "yoelan3", "dogemastertrain"],
+        "fastestLap":["Cynotex"]
     },
     {
         "race": "Japanese GP (Tsukuba)",
