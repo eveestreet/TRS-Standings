@@ -50,18 +50,8 @@
         "attendance": 7
     },
     {
-        "name": "l0xW3z",
-        "role": "Main Driver",
-        "team": "Makinami Holdings",
-        "principal": "l0xW3z",
-        "points": 8,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 1
-    },
-    {
         "name": "baconsuperhairgod",
-        "role": "Reserve Driver",
+        "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
         "points": 2,
@@ -71,7 +61,7 @@
     },
     {
         "name": "dogemastertrain",
-        "role": "Main Driver",
+        "role": "Reserve Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
         "points": 78,
@@ -261,7 +251,7 @@
     },
     {
         "name": "fxbxzx",
-        "role": "Reserve Driver",
+        "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "Cynotex",
         "points": 18,
