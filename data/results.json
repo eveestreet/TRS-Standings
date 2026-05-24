@@ -41,8 +41,8 @@
     },
     {
         "race": "Japanese GP (Tsukuba)",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["jiwjiw60560", "yoelan3", "Cynotex"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "United States GP",

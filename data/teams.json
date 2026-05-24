@@ -2,7 +2,7 @@
     {
         "name": "Honda Racing Team",
         "principal": "IVatticus",
-        "points": 141.5,
+        "points": 143.5,
         "wins": 0
     },
     {
@@ -14,19 +14,19 @@
     {
         "name": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 193,
+        "points": 231,
         "wins": 0
     },
     {
         "name": "Emy Creations",
         "principal": "Cynotex",
-        "points": 239,
+        "points": 264,
         "wins": 1
     },
     {
         "name": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 300,
+        "points": 331,
         "wins": 7
     }
 ]
