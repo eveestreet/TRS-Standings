@@ -46,8 +46,8 @@
     },
     {
         "race": "United States GP",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["yoelan3", "Cynotex", "DINOCHAMPION"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "Italian GP",
