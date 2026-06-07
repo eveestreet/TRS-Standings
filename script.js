@@ -1,3 +1,5 @@
+// This file is responsible for loading the data, rendering the drivers, teams, next race, and podiums on the page, and handling the sorting of drivers based on user input.
+// It fetches the data from JSON files, processes it, and updates the DOM accordingly. The driver colors are defined in a constant object for easy access when rendering the driver cards.
 const driverColors = {
     "Honda Racing Team": {
         "Main Driver": "#BE0D12",
@@ -21,7 +23,7 @@ const driverColors = {
     }
 };
 
-
+// Utility function to load JSON data from a given path. It uses the Fetch API to retrieve the data and returns it as a JavaScript object.
 async function loadJSON(path) {
     const res = await fetch(path);
     return await res.json();
@@ -46,14 +48,14 @@ async function init() {
 
 init();
 
-
+// DOM elements for drivers and teams containers, as well as the sorting controls for drivers. These elements are used to render the driver and team cards, and to handle user interactions for sorting the drivers based on different statistics.
 const driversContainer = document.querySelector(".drivers");
 const teamsContainer = document.querySelector(".teams");
 
 const driverSortStat = document.getElementById("driverSortStat");
 const driverSortOrder = document.getElementById("driverSortOrder");
 
-
+// Function to render the list of drivers on the page. It creates a card for each driver, displaying their name, role, team, and statistics. The card's color is determined by the driver's team and role using the predefined driverColors object. Main drivers are highlighted with bold text for their role.
 function renderDrivers(list) {
     driversContainer.innerHTML = "";
 
@@ -102,7 +104,7 @@ info.innerHTML = `
     <h3>Standings information relevant as of 05/24/2026</h3>
     </div>
 `;
-
+// Function to sort the drivers based on the selected statistic and order. It handles sorting by team name, driver name, and numerical statistics such as points, podiums, wins, and attendance. The sorting logic ensures that when sorting by team name, drivers are also sorted by their names within the same team.
 function sortDrivers() {
     const stat = driverSortStat.value;
     const order = driverSortOrder.value;
@@ -150,6 +152,7 @@ function sortDrivers() {
 driverSortStat.addEventListener("change", sortDrivers);
 driverSortOrder.addEventListener("change", sortDrivers);
 
+// Function to render the list of teams on the page. It creates a card for each team, displaying the team name, points, wins, principal, and lists of main and reserve drivers. The card's color is determined by the team's main driver's color using the predefined driverColors object.
 function renderTeams() {
     teamsContainer.innerHTML = "";
 
@@ -204,6 +207,8 @@ function renderTeams() {
         });
 }
 
+// Function to get the next race based on the current date. It processes the list of races, calculates the deadline for each race (set to 15:00 UTC), and filters out races that have already passed.
+// It then sorts the remaining races by date and returns the next upcoming race.
 function getNextRace() {
     const now = new Date();
 
@@ -249,6 +254,7 @@ function renderNextRace() {
     `;
 }
 
+// Function to render the podium results for each race. It divides the races into two halves and renders them in separate containers. For each race with available results, it creates a card displaying the round number, race name, podium finishers, and fastest lap. If results are not available for a race, it renders a card with placeholders. The cards are styled differently based on whether results are available or not.
 function renderPodiums() {
 
     const firstHalfContainer = document.getElementById("resultsFHalf");
@@ -261,6 +267,7 @@ function renderPodiums() {
     renderHalf(podiums.slice(8, 16), secondHalfContainer, 9);
 }
 
+// Helper function to render a half of the podium results. It takes a list of races, a container to render into, and the starting round number. It creates cards for each race, displaying the round number, race name, podium finishers, and fastest lap if results are available. If results are not available, it renders a card with placeholders. The cards are styled differently based on the availability of results.
 function renderHalf(list, container, startRound) {
 
     list.forEach((race, index) => {

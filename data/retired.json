@@ -48,5 +48,15 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 0
+    },
+        {
+        "name": "batman997_",
+        "role": "Retired Driver",
+        "team": "N/A",
+        "principal": "N/A",
+        "points": 2,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
     }
 ]

@@ -4,10 +4,10 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 62,
+        "points": 72,
         "podiums": 0,
         "wins": 0,
-        "attendance": 8
+        "attendance": 9
     },
     {
         "name": "Cynotex",
@@ -24,10 +24,10 @@
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 76,
+        "points": 88,
         "podiums": 0,
         "wins": 0,
-        "attendance": 8
+        "attendance": 9
     },
     {
         "name": "Simply_Moha",
@@ -94,10 +94,10 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 227,
-        "podiums": 10,
-        "wins": 8,
-        "attendance": 10
+        "points": 248,
+        "podiums": 11,
+        "wins": 9,
+        "attendance": 11
     },
     {
         "name": "Car5678Super",
@@ -134,10 +134,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 125,
-        "podiums": 4,
+        "points": 140,
+        "podiums": 5,
         "wins": 1,
-        "attendance": 7
+        "attendance": 8
     },
     {
         "name": "naelpro321",
@@ -224,10 +224,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 111,
-        "podiums": 2,
+        "points": 128,
+        "podiums": 3,
         "wins": 0,
-        "attendance": 9
+        "attendance": 10
     },
     {
         "name": "lltenryujinll",
@@ -244,10 +244,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "Cynotex",
-        "points": 18,
+        "points": 26,
         "podiums": 0,
         "wins": 0,
-        "attendance": 1
+        "attendance": 2
     },
     {
         "name": "HAYAC122",
@@ -280,16 +280,6 @@
         "attendance": 1
     },
     {
-        "name": "batman997_",
-        "role": "Main Driver",
-        "team": "Honda Racing Team",
-        "principal": "IVatticus",
-        "points": 0,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 0
-    },
-        {
         "name": "l0xW3z",
         "role": "Reserve Driver",
         "team": "Makinami Holdings",
@@ -298,5 +288,15 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 1
+    },
+        {
+        "name": "ZeroHowler",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "IVatticus",
+        "points": 6,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
     }
 ]
