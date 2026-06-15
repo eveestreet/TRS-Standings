@@ -49,7 +49,7 @@
         "wins": 0,
         "attendance": 0
     },
-        {
+    {
         "name": "batman997_",
         "role": "Retired Driver",
         "team": "N/A",
@@ -58,5 +58,15 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 0
+    },
+    {
+        "name": "ZeroHowler",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "IVatticus",
+        "points": 6,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
     }
 ]

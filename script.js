@@ -101,7 +101,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 05/24/2026</h3>
+    <h3>Standings information relevant as of 06/14/2026</h3>
     </div>
 `;
 // Function to sort the drivers based on the selected statistic and order. It handles sorting by team name, driver name, and numerical statistics such as points, podiums, wins, and attendance. The sorting logic ensures that when sorting by team name, drivers are also sorted by their names within the same team.

@@ -56,8 +56,8 @@
     },
     {
         "race": "French GP",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["Cynotex", "yoelan3", "jiwjiw60560"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "English GP",

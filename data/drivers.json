@@ -14,10 +14,10 @@
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 153,
-        "podiums": 7,
-        "wins": 1,
-        "attendance": 9
+        "points": 173,
+        "podiums": 8,
+        "wins": 2,
+        "attendance": 10
     },
     {
         "name": "Aur0raTheRobot",
@@ -94,10 +94,10 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 248,
-        "podiums": 11,
+        "points": 266,
+        "podiums": 12,
         "wins": 9,
-        "attendance": 11
+        "attendance": 12
     },
     {
         "name": "Car5678Super",
@@ -134,20 +134,20 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 140,
-        "podiums": 5,
+        "points": 155,
+        "podiums": 6,
         "wins": 1,
-        "attendance": 8
+        "attendance": 9
     },
     {
         "name": "naelpro321",
         "role": "Reserve Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 14,
+        "points": 26,
         "podiums": 0,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "AlpiGame68",
@@ -289,14 +289,14 @@
         "wins": 0,
         "attendance": 1
     },
-        {
-        "name": "ZeroHowler",
+    {
+        "name": "Rod4YOUTzy",
         "role": "Main Driver",
         "team": "Honda Racing Team",
         "principal": "IVatticus",
-        "points": 6,
+        "points": 8,
         "podiums": 0,
         "wins": 0,
-        "attendance": 0
+        "attendance": 1
     }
 ]
