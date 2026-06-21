@@ -70,7 +70,7 @@ h2 {
 .driverName {
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--driver-color);
+    color: var(--driver-color) !important;
 }
 
 
@@ -170,6 +170,17 @@ h2 {
     margin-bottom: 4px;
 }
 
+#graficoCorrida {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+
+    background: #111 !important;
+    border-radius: 12px;
+    padding: 15px;
+    display: block;
+}
 #info {
     margin-top: 20px;
 }
@@ -290,15 +301,81 @@ h2 {
     text-decoration: none;
     color: #fff;
 }
-.author :hover{
-    color: #aaa
+.author a:hover {
+    color: #aaa;
 }
 
-
-@media (max-width: 600px) {
+@media (max-widSth: 600px) {
 
     .drivers,
     .teams {
         grid-template-columns: 1fr;
     }
+}
+
+html,
+body {
+    background-color: #151414 !important;
+    color: #ffffff !important;
+}
+
+.container {
+    background-color: transparent !important;
+}
+
+#graficoCorrida {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+
+    background-color: #111;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+/* Força texto branco nos cards dos pilotos */
+.driver,
+.driver * {
+    color: #ffffff;
+}
+
+/* Mantém o nome do piloto com a cor da equipe */
+.driverName {
+    color: var(--driver-color) !important;
+}
+
+/* Informações secundárias */
+.driverRole,
+.driverTeam {
+    color: #b0b0b0 !important;
+}
+
+/* Estatísticas */
+.driverStats span {
+    color: #ffffff !important;
+}
+
+.driver {
+    color: #ffffff !important;
+}
+
+.driver * {
+    color: inherit;
+}
+
+.driverName {
+    color: var(--driver-color) !important;
+}
+
+.driverStats,
+.driverStats span {
+    color: #ffffff !important;
+}
+
+.chart-wrapper {
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
 }

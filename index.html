@@ -4,70 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TRS Season Standings</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel" src="react.js"></script>
+
+    <!-- Seu JavaScript -->
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <h1>TRS Season Standings</h1>
+    <div class="container py-4">
 
-    <section class="driverStandings">
-        <h2>Driver Standings</h2>
+        <h1 class="text-center mb-4">
+            TRS Season Standings
+        </h1>
 
-        <div class="sort-controls">
-            <label>
-                Sort drivers by:
-                <select id="driverSortStat">
+        <!-- Driver Standings -->
+        <section class="driverStandings mb-5">
+
+            <h2>Driver Standings</h2>
+
+            <div class="sort-controls mb-4">
+
+                <label class="form-label">
+                    Sort drivers by:
+                
+
+                <select id="driverSortStat" class="form-select mb-3">
                     <option value="points">Points</option>
                     <option value="podiums">Podiums</option>
                     <option value="attendance">Attendance</option>
                     <option value="teamName">Team + Name</option>
                     <option value="driverName">Driver Name</option>
                 </select>
-            </label>
+                </label>
 
-            <label>
-                Order:
-                <select id="driverSortOrder">
+                <label class="form-label">
+                    Order:
+                
+
+                <select id="driverSortOrder" class="form-select">
                     <option value="desc">Descending / (High-Low)</option>
                     <option value="asc">Ascending / (Low-High)</option>
                 </select>
-            </label>
+                </label>
+
+            </div>
+
+            <div class="drivers"></div>
+
+        </section>
+
+        <!-- Constructor Standings -->
+        <section class="constructorStandings mb-5">
+
+            <h2>Constructor Standings</h2>
+
+            <div class="teams"></div>
+
+            <div class="chart-wrapper">
+                <canvas id="graficoCorrida"></canvas>
+            </div>
+
+        </section>
+
+        <!-- Next Race -->
+        <section class="nextRaceSection mb-5">
+            <h2>Next Race</h2>
+
+            <div id="nextRace" class="nextRaceCard"></div>
+
+            <div id="react-root"></div>
+        </section>
+
+        <!-- Season Results -->
+        <section class="racePodiums mb-5">
+
+            <h2>Season Results</h2>
+
+            <h3 class="half">First Half</h3>
+            <div id="resultsFHalf" class="resultCards"></div>
+
+            <h3 class="half mt-4">Second Half</h3>
+            <div id="resultsSecHalf" class="resultCards"></div>
+
+        </section>
+
+        <!-- Info -->
+        <section id="info"></section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <div class="author">
+            <p>This website was made by:
+                <a href="https://discordapp.com/users/550075922766757898" target="_blank">eveestreet</a>
+            and (AnonymousDev)</p>
         </div>
+    </footer>
 
-        <div class="drivers"></div>
-    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <section class="constructorStandings">
-        <h2>Constructor Standings</h2>
-        <div class="teams"></div>
-    </section>
-
-
-    <section class="nextRaceSection">
-        <h2>Next Race</h2>
-        <div id="nextRace" class="nextRaceCard"></div>
-    </section>
-
-    <section class="racePodiums">
-        <h2>Season Results</h2>
-
-        <h3 class="half">First Half</h3>
-        <div id="resultsFHalf" class="resultCards"></div>
-
-        <h3 class="half">Second Half</h3>
-        <div id="resultsSecHalf" class="resultCards"></div>
-
-    </section>
-
-
-    <section id="info"></section>
 </body>
-<footer>
-    <div class="author">This website was made by: <a href="https://discordapp.com/users/550075922766757898" target="_blank">eveestreet</a></div>
-</footer>
 
 </html>

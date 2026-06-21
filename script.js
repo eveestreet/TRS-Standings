@@ -1,5 +1,14 @@
-// This file is responsible for loading the data, rendering the drivers, teams, next race, and podiums on the page, and handling the sorting of drivers based on user input.
-// It fetches the data from JSON files, processes it, and updates the DOM accordingly. The driver colors are defined in a constant object for easy access when rendering the driver cards.
+// ================================
+// TRS Season Standings Dashboard
+// Projeto Final - Desenvolvimento Web
+// Tecnologias:
+// JavaScript, React, Bootstrap,
+// Chart.js, Day.js, SweetAlert2,
+// Open-Meteo API e LocalStorage
+// ================================
+
+// Define as cores utilizadas para cada equipe
+// e para os tipos de pilotos.
 const driverColors = {
     "Honda Racing Team": {
         "Main Driver": "#BE0D12",
@@ -23,10 +32,132 @@ const driverColors = {
     }
 };
 
-// Utility function to load JSON data from a given path. It uses the Fetch API to retrieve the data and returns it as a JavaScript object.
+// Coordenadas geográficas dos circuitos.
+// Utilizadas para obter clima em tempo real
+// através da API Open-Meteo.
+const circuitLocations = {
+    "Italian GP": {
+        lat: 45.6156,
+        lon: 9.2811,
+        city: "Monza, Italy"
+    },
+
+    "United States GP": {
+        lat: 26.4499,
+        lon: -81.3537,
+        city: "Sebring, USA"
+    },
+
+    "French GP": {
+        lat: 43.2506,
+        lon: 5.7917,
+        city: "Le Castellet, France"
+    },
+
+    "Belgian GP": {
+        lat: 50.4372,
+        lon: 5.9714,
+        city: "Spa, Belgium"
+    },
+
+    "German GP": {
+        lat: 49.3278,
+        lon: 8.5658,
+        city: "Hockenheim, Germany"
+    },
+
+    "English GP": {
+        lat: 52.0733,
+        lon: -1.0147,
+        city: "Silverstone, England"
+    },
+
+    "Japanese GP (Tsukuba)": {
+        lat: 36.1036,
+        lon: 140.0870,
+        city: "Tsukuba, Japan"
+    },
+
+    "Japanese GP (Fuji International Speedway)": {
+        lat: 35.3717,
+        lon: 138.9270,
+        city: "Fuji, Japan"
+    }
+};
+
+// Carrega arquivos JSON locais.
+// Caso ocorra erro, exibe alerta usando SweetAlert2.
 async function loadJSON(path) {
-    const res = await fetch(path);
-    return await res.json();
+
+    try {
+
+        const res = await fetch(path);
+
+        if (!res.ok) {
+            throw new Error(`Failed to load ${path}`);
+        }
+
+        return await res.json();
+
+    } catch (error) {
+
+        console.error(error);
+
+        Swal.fire({
+            icon: "error",
+            title: "Loading Error",
+            text: error.message
+        });
+
+        return [];
+    }
+}
+
+// Consulta a API Open-Meteo e retorna
+// temperatura atual e código climático.
+async function getWeather(lat, lon) {
+
+    try {
+
+        const response = await fetch(
+            `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code`
+        );
+
+        const data = await response.json();
+
+        return {
+            temperature: data.current.temperature_2m,
+            weatherCode: data.current.weather_code
+        };
+
+    } catch (error) {
+
+        console.error(error);
+
+        return null;
+    }
+}
+
+// Converte os códigos retornados pela API
+// em descrições legíveis para o usuário.
+function getWeatherDescription(code) {
+
+    const weatherCodes = {
+        0: "Clear Sky",
+        1: "Mostly Clear",
+        2: "Partly Cloudy",
+        3: "Cloudy",
+        45: "Fog",
+        48: "Dense Fog",
+        51: "Light Drizzle",
+        61: "Rain",
+        63: "Moderate Rain",
+        65: "Heavy Rain",
+        80: "Rain Showers",
+        95: "Thunderstorm"
+    };
+
+    return weatherCodes[code] || "Unknown";
 }
 
 let drivers = [];
@@ -34,28 +165,49 @@ let races = [];
 let teamsData = [];
 let podiums = []
 
+// Inicializa a aplicação carregando
+// todos os arquivos de dados e renderizando
+// os componentes da interface.
 async function init() {
     drivers = await loadJSON("data/drivers.json");
     races = await loadJSON("data/races.json");
     teamsData = await loadJSON("data/teams.json");
     podiums = await loadJSON("data/results.json");
 
+    // Recupera as preferências de ordenação
+    // salvas anteriormente pelo usuário.
+    const savedStat =
+        localStorage.getItem("driverSortStat");
+
+    const savedOrder =
+        localStorage.getItem("driverSortOrder");
+
+    driverSortStat.value =
+        localStorage.getItem("driverSortStat")
+        || "points";
+
+    driverSortOrder.value =
+        localStorage.getItem("driverSortOrder")
+        || "desc";
+
     sortDrivers();
     renderTeams();
     renderNextRace();
     renderPodiums();
+    renderRankingChart();
 }
 
 init();
 
-// DOM elements for drivers and teams containers, as well as the sorting controls for drivers. These elements are used to render the driver and team cards, and to handle user interactions for sorting the drivers based on different statistics.
 const driversContainer = document.querySelector(".drivers");
 const teamsContainer = document.querySelector(".teams");
 
 const driverSortStat = document.getElementById("driverSortStat");
 const driverSortOrder = document.getElementById("driverSortOrder");
 
-// Function to render the list of drivers on the page. It creates a card for each driver, displaying their name, role, team, and statistics. The card's color is determined by the driver's team and role using the predefined driverColors object. Main drivers are highlighted with bold text for their role.
+
+// Cria dinamicamente os cards dos pilotos
+// e aplica a cor correspondente à equipe.
 function renderDrivers(list) {
     driversContainer.innerHTML = "";
 
@@ -63,9 +215,10 @@ function renderDrivers(list) {
         const card = document.createElement("div");
         card.classList.add(
             "driver",
+            "shadow-sm",
+            "mb-3",
             d.role === "Main Driver" ? "main-driver" : "reserve-driver"
         );
-
         const color = driverColors[d.team]?.[d.role] || "#FFF";
         card.style.setProperty("--driver-color", color);
 
@@ -101,10 +254,12 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 05/24/2026</h3>
+    <h3>Standings information relevant as of 06/21/2026</h3>
     </div>
 `;
-// Function to sort the drivers based on the selected statistic and order. It handles sorting by team name, driver name, and numerical statistics such as points, podiums, wins, and attendance. The sorting logic ensures that when sorting by team name, drivers are also sorted by their names within the same team.
+
+// Ordena os pilotos conforme os filtros
+// selecionados pelo usuário.
 function sortDrivers() {
     const stat = driverSortStat.value;
     const order = driverSortOrder.value;
@@ -149,10 +304,30 @@ function sortDrivers() {
     renderDrivers(sorted);
 }
 
-driverSortStat.addEventListener("change", sortDrivers);
-driverSortOrder.addEventListener("change", sortDrivers);
+// Salva a preferência de ordenação
+// para futuras visitas ao sistema.
+driverSortStat.addEventListener("change", () => {
 
-// Function to render the list of teams on the page. It creates a card for each team, displaying the team name, points, wins, principal, and lists of main and reserve drivers. The card's color is determined by the team's main driver's color using the predefined driverColors object.
+    localStorage.setItem(
+        "driverSortStat",
+        driverSortStat.value
+    );
+
+    sortDrivers();
+});
+
+driverSortOrder.addEventListener("change", () => {
+
+    localStorage.setItem(
+        "driverSortOrder",
+        driverSortOrder.value
+    );
+
+    sortDrivers();
+});
+
+// Gera os cards das equipes mostrando
+// pontuação, vitórias e pilotos.
 function renderTeams() {
     teamsContainer.innerHTML = "";
 
@@ -172,7 +347,11 @@ function renderTeams() {
                 .map(d => d.name);
 
             const card = document.createElement("div");
-            card.classList.add("team");
+            card.classList.add(
+                "team",
+                "shadow",
+                "mb-3"
+            );
 
             card.style.setProperty(
                 "--team-color",
@@ -207,8 +386,130 @@ function renderTeams() {
         });
 }
 
-// Function to get the next race based on the current date. It processes the list of races, calculates the deadline for each race (set to 15:00 UTC), and filters out races that have already passed.
-// It then sorts the remaining races by date and returns the next upcoming race.
+// Cria o gráfico de classificação
+// utilizando Chart.js.
+function renderRankingChart() {
+
+    const equipes = [...teamsData]
+        .sort((a, b) => b.points - a.points);
+
+    const labels = equipes.map((equipe, i) => {
+
+        const posicao =
+            i === 0 ? "🥇" :
+                i === 1 ? "🥈" :
+                    i === 2 ? "🥉" :
+                        `${i + 1}º`;
+
+        return `${posicao} ${equipe.name}`;
+    });
+
+    const dados = equipes.map(e => e.points);
+
+    const cores = equipes.map((_, i) => {
+        if (i === 0) return "#ffd000cd";
+        if (i === 1) return "#707070";
+        if (i === 2) return "#c96704";
+        return "#4e79a7";
+    });
+
+    const bordas = equipes.map((_, i) =>
+        i < 3 ? "#FFFFFF" : "#333333"
+    );
+
+    const ctx =
+        document.getElementById("graficoCorrida").getContext("2d");
+
+    new Chart(ctx, {
+        type: "bar",
+
+        data: {
+            labels,
+
+            datasets: [{
+                label: "Points",
+                data: dados,
+
+                backgroundColor: cores,
+                borderColor: bordas,
+                borderWidth: 3
+            }]
+        },
+
+        plugins: [ChartDataLabels],
+
+        options: {
+            responsive: true,
+
+            animation: {
+                duration: 100,
+                easing: "easeOutBounce"
+            },
+
+            plugins: {
+
+                title: {
+                    display: true,
+                    text: "Championship Standings",
+                    color: "#FFFFFF",
+                    font: {
+                        size: 18
+                    }
+                },
+
+                legend: {
+                    labels: {
+                        color: "#FFFFFF"
+                    }
+                },
+
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return `${context.raw} points`;
+                        }
+                    }
+                },
+
+                datalabels: {
+                    color: "#FFFFFF",
+                    anchor: "end",
+                    align: "top",
+
+                    font: {
+                        weight: "bold",
+                        size: 14
+                    },
+
+                    formatter: value => value
+                }
+            },
+
+            scales: {
+                x: {
+                    ticks: {
+                        color: "#FFFFFF"
+                    }
+                },
+
+                y: {
+                    beginAtZero: true,
+
+                    ticks: {
+                        color: "#FFFFFF"
+                    },
+
+                    grid: {
+                        color: "rgba(255,255,255,0.1)"
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Localiza a próxima corrida do calendário
+// com base na data atual.
 function getNextRace() {
     const now = new Date();
 
@@ -225,7 +526,9 @@ function getNextRace() {
         .sort((a, b) => a.dateObj - b.dateObj)[0];
 }
 
-function renderNextRace() {
+// Exibe informações da próxima corrida,
+// incluindo clima em tempo real obtido pela API.
+async function renderNextRace() {
     const container = document.getElementById("nextRace");
     const race = getNextRace();
 
@@ -234,14 +537,23 @@ function renderNextRace() {
         return;
     }
 
-    const daysLeft = Math.ceil(
-        (race.dateObj - new Date()) / (1000 * 60 * 60 * 24)
-    );
+    const location = circuitLocations[race.name];
+
+    const weather = location
+        ? await getWeather(location.lat, location.lon)
+        : null;
+
+    const daysLeft = dayjs(race.dateObj)
+        .diff(dayjs(), "day");
 
     container.innerHTML = `
 
         <div class="raceName">${race.name}</div>
-        <div class="raceTrack">${race.track}</div>
+
+        <div class="raceTrack">
+            ${race.track}
+            ${location ? `• ${location.city}` : ""}
+        </div>
 
         <div class="raceDate">
             ${race.dateObj.toLocaleDateString("en-US")}
@@ -250,11 +562,21 @@ function renderNextRace() {
         <div class="raceCountdown">
             ${daysLeft === 0 ? "Today!" : `${daysLeft} days to go`}
         </div>
-        <img class="raceMap" src="${race.map}" alt="${race.track} map">
+
+        <div class="raceWeather">
+    ${weather
+            ? `🌡️ ${weather.temperature}°C • ${getWeatherDescription(weather.weatherCode)}`
+            : "🌡️ Weather unavailable"
+        }
+    </div>
+
+        <img class="raceMap"
+            src="${race.map}"
+            alt="${race.track} map">
     `;
 }
 
-// Function to render the podium results for each race. It divides the races into two halves and renders them in separate containers. For each race with available results, it creates a card displaying the round number, race name, podium finishers, and fastest lap. If results are not available for a race, it renders a card with placeholders. The cards are styled differently based on whether results are available or not.
+// Renderiza todos os resultados da temporada.
 function renderPodiums() {
 
     const firstHalfContainer = document.getElementById("resultsFHalf");
@@ -267,7 +589,8 @@ function renderPodiums() {
     renderHalf(podiums.slice(8, 16), secondHalfContainer, 9);
 }
 
-// Helper function to render a half of the podium results. It takes a list of races, a container to render into, and the starting round number. It creates cards for each race, displaying the round number, race name, podium finishers, and fastest lap if results are available. If results are not available, it renders a card with placeholders. The cards are styled differently based on the availability of results.
+// Renderiza uma seção específica dos resultados
+// (primeira ou segunda metade do campeonato).
 function renderHalf(list, container, startRound) {
 
     list.forEach((race, index) => {
@@ -317,5 +640,4 @@ function renderHalf(list, container, startRound) {
 
         container.appendChild(card);
     });
-
 }

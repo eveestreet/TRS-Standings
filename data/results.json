@@ -56,13 +56,13 @@
     },
     {
         "race": "French GP",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["Cynotex", "yoelan3", "jiwjiw60560"],
+        "fastestLap":["yoelan3"]
     },
     {
         "race": "English GP",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["Cynotex", "jiwjiw60560", "eveestreet"],
+        "fastestLap":["jiwjiw60560"]
     },
     {
         "race": "Japanese GP (Fuji International Speedway)",

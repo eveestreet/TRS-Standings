@@ -49,7 +49,7 @@
         "wins": 0,
         "attendance": 0
     },
-        {
+    {
         "name": "batman997_",
         "role": "Retired Driver",
         "team": "N/A",
@@ -58,5 +58,15 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 0
+    },
+    {
+        "name": "baconsuperhairgod",
+        "role": "Retired Driver",
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 2,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
     }
 ]
