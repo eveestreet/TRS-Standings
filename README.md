@@ -1,2 +1,2 @@
-# -TRS-Standings-
- Small website for league standings
+# TRS-Standings
+Small website for league standings

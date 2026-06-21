@@ -1,5 +1,4 @@
-For the next developer who's perchance reading this, the website operates purely on Javascript, HTML and CSS, with the standings being done
-in a python data editor which is not (yet) posted on this repository.
+For the next developer who's perchance reading this, the website operates purely on Javascript, HTML and CSS, with the standings being done in a python data editor which is not (yet) posted on this repository.
 Below is the reference for points counting for races and sprint races, good luck and good job.
 Race
 
