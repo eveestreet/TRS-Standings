@@ -41,9 +41,9 @@
     },
     {
         "name": "LillacKyoto",
-        "role": "Retired Driver",
-        "team": "N/A",
-        "principal": "N/A",
+        "role": "Main Driver",
+        "team": "Makinami Holdings",
+        "principal": "l0xW3z",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -70,11 +70,71 @@
         "attendance": 1
     },
     {
+        "name": "rodrigamerx99",
+        "role": "Main Driver",
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
         "name": "baconsuperhairgod",
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
         "points": 2,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "naelpro321",
+        "role": "Reserve Driver",
+        "team": "Acura Motorsports",
+        "principal": "eveestreet",
+        "points": 29,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 5
+    },
+        {
+        "name": "corentin080000",
+        "role": "Main Driver",
+        "team": "",
+        "principal": "l0xW3z",
+        "points": 9,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+        {
+        "name": "Hazard_71",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "IVatticus",
+        "points": 2,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+        {
+        "name": "AlpiGame68",
+        "role": "Main Driver",
+        "team": "Veridian Racing",
+        "principal": "Yug1203",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+        {
+        "name": "ZeroHowler",
+        "role": "Main Driver",
+        "team": "Honda Racing Team",
+        "principal": "IVatticus",
+        "points": 6,
         "podiums": 0,
         "wins": 0,
         "attendance": 1
