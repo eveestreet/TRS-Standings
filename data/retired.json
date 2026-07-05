@@ -99,7 +99,7 @@
         "wins": 0,
         "attendance": 5
     },
-        {
+    {
         "name": "corentin080000",
         "role": "Main Driver",
         "team": "",
@@ -109,7 +109,7 @@
         "wins": 0,
         "attendance": 1
     },
-        {
+    {
         "name": "Hazard_71",
         "role": "Main Driver",
         "team": "Honda Racing Team",
@@ -119,7 +119,7 @@
         "wins": 0,
         "attendance": 1
     },
-        {
+    {
         "name": "AlpiGame68",
         "role": "Main Driver",
         "team": "Veridian Racing",
@@ -129,12 +129,22 @@
         "wins": 0,
         "attendance": 0
     },
-        {
+    {
         "name": "ZeroHowler",
         "role": "Main Driver",
         "team": "Honda Racing Team",
         "principal": "IVatticus",
         "points": 6,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "l0xW3z",
+        "role": "Reserve Driver",
+        "team": "Makinami Holdings",
+        "principal": "l0xW3z",
+        "points": 11,
         "podiums": 0,
         "wins": 0,
         "attendance": 1

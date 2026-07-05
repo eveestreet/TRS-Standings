@@ -66,12 +66,14 @@
     },
     {
         "race": "Japanese GP (Fuji International Speedway)",
-        "podium":["", "", ""]
+        "podium":["Cynotex", "yoelan3", "jiwjiw60560"],
+        "fastestLap":["yoelan3"]
+    
     },
     {
         "race": "German GP",
-        "podium":["", "", ""],
-        "fastestLap":[]
+        "podium":["Cynotex", "jiwjiw60560", "ZeroHowler"],
+        "fastestLap":["Cynotex"]
     },
     {
         "race": "Belgian GP",
