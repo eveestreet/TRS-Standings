@@ -4,10 +4,10 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 103,
+        "points": 109,
         "podiums": 1,
         "wins": 0,
-        "attendance": 12
+        "attendance": 13
     },
     {
         "name": "Cynotex",
@@ -24,10 +24,10 @@
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 100,
-        "podiums": 0,
+        "points": 115,
+        "podiums": 1,
         "wins": 0,
-        "attendance": 10
+        "attendance": 11
     },
     {
         "name": "Simply_Moha",
@@ -84,10 +84,10 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 284,
-        "podiums": 13,
-        "wins": 9,
-        "attendance": 13
+        "points": 305,
+        "podiums": 14,
+        "wins": 10,
+        "attendance": 14
     },
     {
         "name": "Car5678Super",
@@ -124,10 +124,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 205,
-        "podiums": 9,
+        "points": 222,
+        "podiums": 10,
         "wins": 1,
-        "attendance": 12
+        "attendance": 13
     },
     {
         "name": "agustin1608el",
@@ -194,10 +194,10 @@
         "role": "Main Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 128,
+        "points": 140,
         "podiums": 3,
         "wins": 0,
-        "attendance": 10
+        "attendance": 11
     },
     {
         "name": "lltenryujinll",
@@ -244,27 +244,47 @@
         "role": "Main Driver",
         "team": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 16,
+        "points": 24,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "ZeroHowler",
         "role": "Main Driver",
         "team": "Emy Creations",
         "principal": "Cynotex",
-        "points": 21,
+        "points": 31,
         "podiums": 1,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "Grov3s",
         "role": "Reserve Driver",
         "team": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 12,
+        "points": 16,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 2
+    },
+    {
+        "name": "paert64",
+        "role": "Reserve Driver",
+        "team": "Emy Creations",
+        "principal": "Cynotex",
+        "points": 5,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "djawesome10_30",
+        "role": "Reserve Driver",
+        "team": "Veridian Racing",
+        "principal": "Yug1203",
+        "points": 3,
         "podiums": 0,
         "wins": 0,
         "attendance": 1

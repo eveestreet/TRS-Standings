@@ -8,25 +8,25 @@
     {
         "name": "Veridian Racing",
         "principal": "Yug1203",
-        "points": 38,
+        "points": 41,
         "wins": 0
     },
     {
         "name": "Makinami Holdings",
         "principal": "l0xW3z",
-        "points": 407,
+        "points": 440,
         "wins": 1
     },
     {
         "name": "Emy Creations",
         "principal": "Cynotex",
-        "points": 429,
+        "points": 459,
         "wins": 5
     },
     {
         "name": "Acura Motorsports",
         "principal": "eveestreet",
-        "points": 530,
-        "wins": 9
+        "points": 565,
+        "wins": 10
     }
 ]

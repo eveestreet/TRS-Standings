@@ -254,7 +254,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-    <h3>Standings information relevant as of 07/05/2026</h3>
+    <h3>Standings information relevant as of 07/12/2026</h3>
     </div>
 `;
 
@@ -399,7 +399,7 @@ function renderRankingChart() {
             i === 0 ? "🥇" :
                 i === 1 ? "🥈" :
                     i === 2 ? "🥉" :
-                        `${i + 1}º`;
+                        `${i + 1}th`;
 
         return `${posicao} ${equipe.name}`;
     });
