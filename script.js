@@ -10,25 +10,25 @@
 // Define as cores utilizadas para cada equipe
 // e para os tipos de pilotos.
 const driverColors = {
-    "Honda Racing Team": {
-        "Main Driver": "#BE0D12",
-        "Reserve Driver": "#BE0D12"
+    "Atlas GP": {
+        "Main Driver": "#ffffff",
+        "Reserve Driver": "#ffffff"
     },
-    "Veridian Racing": {
-        "Main Driver": "#017BB3",
-        "Reserve Driver": "#017BB3"
+    "Islington Racing": {
+        "Main Driver": "#34ED2D",
+        "Reserve Driver": "#34ED2D"
     },
-    "Makinami Holdings": {
-        "Main Driver": "#D20963",
-        "Reserve Driver": "#D20963"
+    "Onix Motorsport": {
+        "Main Driver": "#EF8215",
+        "Reserve Driver": "#EF8215"
     },
-    "Emy Creations": {
-        "Main Driver": "#9A01B1",
-        "Reserve Driver": "#9A01B1"
+    "Nova Customs": {
+        "Main Driver": "#2A1ADD",
+        "Reserve Driver": "#2A1ADD"
     },
-    "Acura Motorsports": {
-        "Main Driver": "#FFFFFF",
-        "Reserve Driver": "#FFFFFF"
+    "007 Lancelot": {
+        "Main Driver": "#646464",
+        "Reserve Driver": "#646464"
     }
 };
 
@@ -59,19 +59,7 @@ const circuitLocations = {
         lon: 5.9714,
         city: "Spa, Belgium"
     },
-
-    "German GP": {
-        lat: 49.3278,
-        lon: 8.5658,
-        city: "Hockenheim, Germany"
-    },
-
-    "English GP": {
-        lat: 52.0733,
-        lon: -1.0147,
-        city: "Silverstone, England"
-    },
-
+    
     "Japanese GP (Tsukuba)": {
         lat: 36.1036,
         lon: 140.0870,
@@ -518,7 +506,7 @@ function getNextRace() {
             const raceDate = new Date(r.date);
 
             const deadline = new Date(raceDate);
-            deadline.setUTCHours(15, 0, 0, 0);
+            deadline.setUTCHours(13, 30, 0, 0);
 
             return { ...r, dateObj: raceDate, deadline };
         })
@@ -585,8 +573,8 @@ function renderPodiums() {
     firstHalfContainer.innerHTML = "";
     secondHalfContainer.innerHTML = "";
 
-    renderHalf(podiums.slice(0, 8), firstHalfContainer, 1);
-    renderHalf(podiums.slice(8, 16), secondHalfContainer, 9);
+    renderHalf(podiums.slice(0, 6), firstHalfContainer, 1);
+    renderHalf(podiums.slice(6, 12), secondHalfContainer, 7);
 }
 
 // Renderiza uma seção específica dos resultados

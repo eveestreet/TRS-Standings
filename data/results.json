@@ -1,83 +1,62 @@
 [
     {
-        "race": "Japanese GP (Tsukuba)",
-        "podium":["yoelan3", "jiwjiw60560", "crabie_Finnie18703"],
-        "fastestLap":["crabie_Finnie18703"]
-    },
-    {
-        "race": "United States GP",
-        "podium":["yoelan3", "Cynotex", "jiwjiw60560"],
-        "fastestLap":["yoelan3"]
-    },
-    {
-        "race": "Italian GP",
-        "podium":["yoelan3", "Dragon_GhostBR", "Cynotex"],
-        "fastestLap":["yoelan3"]
-    },
-    {
         "race": "French GP",
-        "podium":["yoelan3", "jiwjiw60560", "Cynotex"],
-        "fastestLap":["yoelan3"]
-    },
-    {
-        "race": "English GP",
-        "podium":["yoelan3", "Cynotex", "dogemastertrain"],
-        "fastestLap":["yoelan3"]
-    },
-    {
-        "race": "Japanese GP (Fuji International Speedway)",
-        "podium":["yoelan3", "crabie_Finnie18703", "Dragon_GhostBR"],
-        "fastestLap":["crabie_Finnie18703"]
-    },
-    {
-        "race": "German GP",
-        "podium":["yoelan3", "crabie_Finnie18703", "DINOCHAMPION"],
-        "fastestLap":["crabie_Finnie18703"]
-    },
-    {
-        "race": "Belgian GP",
-        "podium":["Cynotex", "yoelan3", "dogemastertrain"],
-        "fastestLap":["Cynotex"]
+        "podium": ["DINOCHAMPION", "LOLMZAN", "ERYTO"],
+        "fastestLap": "jiwjiw60560"
     },
     {
         "race": "Japanese GP (Tsukuba)",
-        "podium":["jiwjiw60560", "yoelan3", "Cynotex"],
-        "fastestLap":["yoelan3"]
+        "podium": ["", "", ""],
+        "fastestLap": ""
     },
     {
         "race": "United States GP",
-        "podium":["yoelan3", "Cynotex", "DINOCHAMPION"],
-        "fastestLap":["yoelan3"]
+        "podium": ["", "", ""],
+        "fastestLap": ""
     },
     {
         "race": "Italian GP",
-        "podium":["yoelan3", "DINOCHAMPION", "jiwjiw60560"],
-        "fastestLap":["yoelan3"]
-    },
-    {
-        "race": "French GP",
-        "podium":["Cynotex", "yoelan3", "jiwjiw60560"],
-        "fastestLap":["yoelan3"]
-    },
-    {
-        "race": "English GP",
-        "podium":["Cynotex", "jiwjiw60560", "eveesteet"],
-        "fastestLap":["jiwjiw60560"]
-    },
-    {
-        "race": "Japanese GP (Fuji International Speedway)",
-        "podium":["Cynotex", "yoelan3", "jiwjiw60560"],
-        "fastestLap":["yoelan3"]
-    
-    },
-    {
-        "race": "German GP",
-        "podium":["Cynotex", "jiwjiw60560", "ZeroHowler"],
-        "fastestLap":["Cynotex"]
+        "podium": ["", "", ""],
+        "fastestLap": ""
     },
     {
         "race": "Belgian GP",
-        "podium":["yoelan3", "jiwjiw60560", "Aur0raTheRobot"],
-        "fastestLap":["yoelan3"]
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Japanese GP (Fuji International Speedway)",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "French GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Japanese GP (Tsukuba)",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "United States GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Italian GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Belgian GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Japanese GP (Fuji International Speedway)",
+        "podium": ["", "", ""],
+        "fastestLap": ""
     }
 ]

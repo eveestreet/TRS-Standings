@@ -1,32 +1,32 @@
 [
     {
-        "name": "Honda Racing Team",
-        "principal": "IVatticus",
-        "points": 170.5,
+        "name": "Atlas GP",
+        "principal": "yoelan3",
+        "points": 9,
         "wins": 0
     },
     {
-        "name": "Veridian Racing",
-        "principal": "Yug1203",
-        "points": 41,
+        "name": "Islington Racing",
+        "principal": "Hentai_71",
+        "points": 31,
         "wins": 0
     },
     {
-        "name": "Makinami Holdings",
-        "principal": "l0xW3z",
-        "points": 440,
-        "wins": 1
+        "name": "Onix Motorsport",
+        "principal": "leafXtra",
+        "points": 20,
+        "wins": 0
     },
     {
-        "name": "Emy Creations",
-        "principal": "Cynotex",
-        "points": 459,
-        "wins": 5
+        "name": "Nova Customs",
+        "principal": "sushi",
+        "points": 21,
+        "wins": 0
     },
     {
-        "name": "Acura Motorsports",
+        "name": "007 Lancelot",
         "principal": "eveestreet",
-        "points": 565,
-        "wins": 10
+        "points": 22,
+        "wins": 1
     }
 ]

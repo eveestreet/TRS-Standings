@@ -1,50 +1,38 @@
 [
     {
+        "name": "French GP",
+        "track": "Circuit Paul Ricard",
+        "date": "09/12/2026",
+        "map": "assets/img/PaulRicard.png"
+    },
+    {
         "name": "Japanese GP (Tsukuba)",
         "track": "Tsukuba",
-        "date": "07/13/2026",
+        "date": "09/19/2026",
         "map": "assets/img/tsukuba.png"
     },
     {
         "name": "United States GP",
         "track": "Sebring",
-        "date": "05/31/2026",
+        "date": "09/26/2026",
         "map": "assets/img/Sebring.png"
     },
     {
         "name": "Italian GP",
         "track": "Monza",
-        "date": "06/07/2026",
+        "date": "10/10/2026",
         "map": "assets/img/Monza.png"
-    },
-    {
-        "name": "French GP",
-        "track": "Circuit Paul Ricard",
-        "date": "06/14/2026",
-        "map": "assets/img/PaulRicard.png"
-    },
-    {
-        "name": "English GP",
-        "track": "Silverstone",
-        "date": "06/21/2026",
-        "map": "assets/img/Silverstone.png"
-    },
-    {
-        "name": "Japanese GP (Fuji International Speedway)",
-        "track": "Fuji",
-        "date": "06/28/2026",
-        "map": "assets/img/Fuji.png"
-    },
-    {
-        "name": "German GP",
-        "track": "Hockenheim",
-        "date": "07/05/2026",
-        "map": "assets/img/Hockenheim.png"
     },
     {
         "name": "Belgian GP",
         "track": "Circuit de Spa-Francorchamps",
-        "date": "07/12/2026",
+        "date": "10/17/2026",
         "map": "assets/img/Spa.png"
+    },
+    {
+        "name": "Japanese GP (Fuji International Speedway)",
+        "track": "Fuji",
+        "date": "10/24/2026",
+        "map": "assets/img/Fuji.png"
     }
 ]
