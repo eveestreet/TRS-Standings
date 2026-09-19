@@ -1,10 +1,21 @@
-{
-    "name": "eveestreet",
-    "role": "Main Driver",
-    "team": "007 Lancelot",
-    "principal": "eveestreet",
-    "points": 1,
-    "podiums": 0,
-    "wins": 0,
-    "attendance": 1
-}
+[    {
+        "name": "Simply_Moha",
+        "role": "Reserve Driver",
+        "team": "Onix Motorsport",
+        "principal": "leafXtra",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "eveestreet",
+        "role": "Main Driver",
+        "team": "007 Lancelot",
+        "principal": "eveestreet",
+        "points": 1,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    }
+]

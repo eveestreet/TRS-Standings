@@ -2,19 +2,19 @@
     {
         "name": "Atlas GP",
         "principal": "yoelan3",
-        "points": 9,
+        "points": 41,
         "wins": 0
     },
     {
         "name": "Islington Racing",
         "principal": "Hentai_71",
-        "points": 31,
+        "points": 66,
         "wins": 0
     },
     {
         "name": "Onix Motorsport",
         "principal": "leafXtra",
-        "points": 20,
+        "points": 32.5,
         "wins": 0
     },
     {
@@ -26,7 +26,7 @@
     {
         "name": "007 Lancelot",
         "principal": "eveestreet",
-        "points": 22,
-        "wins": 1
+        "points": 42,
+        "wins": 2
     }
 ]
