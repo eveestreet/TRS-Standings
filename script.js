@@ -242,7 +242,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-        <h3>Standings information relevant as of 09/26/2026</h3>
+        <h3>Standings information relevant as of 10/04/2026</h3>
     </div>
 `;
 

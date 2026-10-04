@@ -1,4 +1,5 @@
-[    {
+[
+    {
         "name": "Simply_Moha",
         "role": "Reserve Driver",
         "team": "Onix Motorsport",
@@ -17,5 +18,45 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 1
+    },
+    {
+        "name": "fxbxzx",
+        "role": "Main Driver",
+        "team": "Atlas GP",
+        "principal": "yoelan3",
+        "points": 4,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "crabie_Finnie18703",
+        "role": "Main Driver",
+        "team": "Atlas GP",
+        "principal": "yoelan3",
+        "points": 13,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 2
+    },
+        {
+        "name": "doggyuk1",
+        "role": "Main Driver",
+        "team": "Nova Customs",
+        "principal": "sushi",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+        {
+        "name": "kyssoya",
+        "role": "Reserve Driver",
+        "team": "Nova Customs",
+        "principal": "sushi",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
     }
 ]

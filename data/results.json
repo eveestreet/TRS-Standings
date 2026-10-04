@@ -15,7 +15,37 @@
         "fastestLap": "Rod4YOUtzy"
     },
     {
-        "race": "Italian GP",
+        "race": "United States GP (Daytona)",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Mystery GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "German GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "United States GP (Indianapolis)",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Mystery GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Mystery GP",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "British GP",
         "podium": ["", "", ""],
         "fastestLap": ""
     },
@@ -25,37 +55,12 @@
         "fastestLap": ""
     },
     {
-        "race": "Japanese GP (Fuji International Speedway)",
-        "podium": ["", "", ""],
-        "fastestLap": ""
-    },
-    {
-        "race": "French GP",
-        "podium": ["", "", ""],
-        "fastestLap": ""
-    },
-    {
-        "race": "Japanese GP (Tsukuba)",
-        "podium": ["", "", ""],
-        "fastestLap": ""
-    },
-    {
-        "race": "United States GP",
-        "podium": ["", "", ""],
-        "fastestLap": ""
-    },
-    {
         "race": "Italian GP",
         "podium": ["", "", ""],
         "fastestLap": ""
     },
     {
-        "race": "Belgian GP",
-        "podium": ["", "", ""],
-        "fastestLap": ""
-    },
-    {
-        "race": "Japanese GP (Fuji International Speedway)",
+        "race": "Japanese GP (Fuji)",
         "podium": ["", "", ""],
         "fastestLap": ""
     }

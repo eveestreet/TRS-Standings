@@ -12,27 +12,69 @@
         "map": "assets/img/tsukuba.png"
     },
     {
-        "name": "United States GP",
-        "track": "Sebring",
+        "name": "United States GP (Sebring)",
+        "track": "Sebring International Raceway",
         "date": "09/26/2026",
         "map": "assets/img/Sebring.png"
     },
     {
-        "name": "Italian GP",
-        "track": "Monza",
+        "name": "United States GP (Daytona)",
+        "track": "Daytona International Speedway",
         "date": "10/10/2026",
-        "map": "assets/img/Monza.png"
+        "map": "assets/img/Daytona.png"
+    },
+    {
+        "name": "Mystery GP ",
+        "track": "Mystery Track",
+        "date": "10/17/2026",
+        "map": "assets/img/Mystery.png"
+    },
+    {
+        "name": "German GP",
+        "track": "Hockenheimring",
+        "date": "10/24/2026",
+        "map": "assets/img/Hockenheim.png"
+    },
+    {
+        "name": "United States GP (Indianapolis)",
+        "track": "Indianapolis Motor Speedway",
+        "date": "10/31/2026",
+        "map": "assets/img/Indianapolis.png"
+    },
+        {
+        "name": "Mystery GP ",
+        "track": "Mystery Track",
+        "date": "11/7/2026",
+        "map": "assets/img/Mystery.png"
+    },
+        {
+        "name": "Mystery GP ",
+        "track": "Mystery Track",
+        "date": "11/14/2026",
+        "map": "assets/img/Mystery.png"
+    },
+    {
+        "name": "British GP",
+        "track": "Silverstone Circuit",
+        "date": "11/21/2026",
+        "map": "assets/img/Silverstone.png"
     },
     {
         "name": "Belgian GP",
         "track": "Circuit de Spa-Francorchamps",
-        "date": "10/17/2026",
+        "date": "11/28/2026",
         "map": "assets/img/Spa.png"
     },
     {
-        "name": "Japanese GP (Fuji International Speedway)",
-        "track": "Fuji",
-        "date": "10/24/2026",
+        "name": "Italian GP",
+        "track": "Autodromo Nazionale Monza",
+        "date": "12/5/2026",
+        "map": "assets/img/Monza.png"
+    },
+    {
+        "name": "Japanese GP (Fuji)",
+        "track": "Fuji International Speedway",
+        "date": "12/12/2026",
         "map": "assets/img/Fuji.png"
     }
 ]

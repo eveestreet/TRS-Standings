@@ -11,7 +11,7 @@
     },
     {
         "name": "tronicdoom",
-        "role": "Reserve Driver",
+        "role": "Main Driver",
         "team": "007 Lancelot",
         "principal": "eveestreet",
         "points": 0,
@@ -40,24 +40,24 @@
         "attendance": 1
     },
     {
-        "name": "fxbxzx",
-        "role": "Main Driver",
-        "team": "Atlas GP",
-        "principal": "yoelan3",
-        "points": 4,
+        "name": "nxltleo",
+        "role": "Reserve Driver",
+        "team": "007 Lancelot",
+        "principal": "eveestreet",
+        "points": 0,
         "podiums": 0,
         "wins": 0,
-        "attendance": 1
+        "attendance": 0
     },
     {
-        "name": "crabie_Finnie18703",
+        "name": "theshadow7134",
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
-        "points": 13,
+        "points": 0,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 0
     },
     {
         "name": "jiwjiw60560",
@@ -90,7 +90,7 @@
         "attendance": 0
     },
     {
-        "name": "Hazard_71",
+        "name": "blondedfrequency",
         "role": "Reserve Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
@@ -180,7 +180,7 @@
         "attendance": 2
     },
     {
-        "name": "doggyuk1",
+        "name": "Dragon_GhostBR",
         "role": "Main Driver",
         "team": "Nova Customs",
         "principal": "sushi",
@@ -201,7 +201,7 @@
     },
     {
         "name": "warychat",
-        "role": "Reserve Driver",
+        "role": "Main Driver",
         "team": "Nova Customs",
         "principal": "sushi",
         "points": 12,
@@ -220,18 +220,8 @@
         "attendance": 2
     },
     {
-        "name": "kyssoya",
-        "role": "Reserve Driver",
-        "team": "Nova Customs",
-        "principal": "sushi",
-        "points": 0,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 0
-    },
-    {
         "name": "IVatticus",
-        "role": "Main Driver",
+        "role": "Reserve Driver",
         "team": "Nova Customs",
         "principal": "sushi",
         "points": 0,
