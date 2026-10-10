@@ -4,10 +4,10 @@
         "role": "Main Driver",
         "team": "007 Lancelot",
         "principal": "eveestreet",
-        "points": 60,
-        "podiums": 3,
+        "points": 77,
+        "podiums": 4,
         "wins": 3,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "tronicdoom",
@@ -24,20 +24,20 @@
         "role": "Reserve Driver",
         "team": "007 Lancelot",
         "principal": "eveestreet",
-        "points": 4,
+        "points": 5,
         "podiums": 0,
         "wins": 0,
-        "attendance": 1
+        "attendance": 2
     },
     {
         "name": "paert64",
         "role": "Main Driver",
         "team": "007 Lancelot",
         "principal": "eveestreet",
-        "points": 5,
+        "points": 13,
         "podiums": 0,
         "wins": 0,
-        "attendance": 1
+        "attendance": 2
     },
     {
         "name": "nxltleo",
@@ -64,20 +64,20 @@
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
-        "points": 36,
+        "points": 49,
         "podiums": 1,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "ERYTO",
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 33,
+        "points": 43,
         "podiums": 1,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "Grov3s",
@@ -114,20 +114,20 @@
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 15.5,
+        "points": 18.5,
         "podiums": 0,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "Rod4YOUtzy",
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 43,
-        "podiums": 2,
-        "wins": 0,
-        "attendance": 3
+        "points": 63,
+        "podiums": 3,
+        "wins": 1,
+        "attendance": 4
     },
     {
         "name": "IJN_Yamato",
@@ -174,10 +174,10 @@
         "role": "Main Driver",
         "team": "Onix Motorsport",
         "principal": "leafXtra",
-        "points": 18,
-        "podiums": 0,
+        "points": 33,
+        "podiums": 1,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "Dragon_GhostBR",
@@ -204,10 +204,10 @@
         "role": "Main Driver",
         "team": "Nova Customs",
         "principal": "sushi",
-        "points": 12,
+        "points": 18,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "LOLMZAN",
@@ -232,6 +232,16 @@
     {
         "name": "romanreinsj",
         "role": "Main Driver",
+        "team": "Onix Motorsport",
+        "principal": "leafXtra",
+        "points": 9,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 2
+    },
+    {
+        "name": "timrosinnus64",
+        "role": "Reserve Driver",
         "team": "Onix Motorsport",
         "principal": "leafXtra",
         "points": 5,

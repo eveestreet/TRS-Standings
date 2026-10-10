@@ -42,12 +42,32 @@ const circuitLocations = {
         city: "Monza, Italy"
     },
 
-    "United States GP": {
+    "United States GP (Sebring)": {
         lat: 26.4499,
         lon: -81.3537,
         city: "Sebring, USA"
     },
 
+    "United States GP (Daytona)": {
+        lat: 29.1852,
+        lon: -81.0686,
+        city: "Daytona Beach, USA"
+    },
+    "United States GP (Indianapolis)": {
+        lat: 39.7954,
+        lon: -86.2348,
+        city: "Indianapolis, USA"
+    },
+    "German GP": {
+        lat: 49.3279,
+        lon: 8.5656,
+        city: "Nürburg, Germany"
+    },
+    "British GP":{
+        lat: 52.0691,
+        lon: -1.0224,
+        city: "Silverstone, UK"
+    },
     "French GP": {
         lat: 43.2506,
         lon: 5.7917,
@@ -59,7 +79,7 @@ const circuitLocations = {
         lon: 5.9714,
         city: "Spa, Belgium"
     },
-    
+
     "Japanese GP (Tsukuba)": {
         lat: 36.1036,
         lon: 140.0870,
@@ -99,6 +119,11 @@ async function loadJSON(path) {
 
         return [];
     }
+}
+
+function getCurrentDate() {
+    const now = new Date();
+    return now;
 }
 
 // Consulta a API Open-Meteo e retorna
@@ -242,7 +267,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-        <h3>Standings information relevant as of 10/04/2026</h3>
+        <h3>Standings information relevant as of ${getCurrentDate().toLocaleDateString()}</h3>
     </div>
 `;
 

@@ -2,31 +2,31 @@
     {
         "name": "Atlas GP",
         "principal": "yoelan3",
-        "points": 53,
+        "points": 66,
         "wins": 0
     },
     {
         "name": "Islington Racing",
         "principal": "Hentai_71",
-        "points": 91.5,
-        "wins": 0
+        "points": 124.5,
+        "wins": 1
     },
     {
         "name": "Onix Motorsport",
         "principal": "leafXtra",
-        "points": 32.5,
+        "points": 56.5,
         "wins": 0
     },
     {
         "name": "Nova Customs",
         "principal": "sushi",
-        "points": 54,
+        "points": 60,
         "wins": 0
     },
     {
         "name": "007 Lancelot",
         "principal": "eveestreet",
-        "points": 71,
+        "points": 97,
         "wins": 3
     }
 ]
