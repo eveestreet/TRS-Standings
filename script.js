@@ -36,12 +36,17 @@ const driverColors = {
 // Utilizadas para obter clima em tempo real
 // através da API Open-Meteo.
 const circuitLocations = {
-    "Italian GP": {
+    "Italian GP (Autodromo Internazionale di Monza)": {
         lat: 45.6156,
         lon: 9.2811,
         city: "Monza, Italy"
     },
 
+    "Italian GP (Misano)": {
+        lat: 43.9635,
+        lon: 12.6854,
+        city: "Misano Adriatico, Italy"
+    },
     "United States GP (Sebring)": {
         lat: 26.4499,
         lon: -81.3537,
@@ -61,7 +66,7 @@ const circuitLocations = {
     "German GP": {
         lat: 49.3279,
         lon: 8.5656,
-        city: "Nürburg, Germany"
+        city: "Hockenheim, Germany"
     },
     "British GP":{
         lat: 52.0691,

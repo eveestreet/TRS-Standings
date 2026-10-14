@@ -24,10 +24,10 @@
         "map": "assets/img/Daytona.png"
     },
     {
-        "name": "Mystery GP ",
-        "track": "Mystery Track",
+        "name": "Italian GP (Misano)",
+        "track": "Misano World Circuit Marco Simoncelli",
         "date": "10/17/2026",
-        "map": "assets/img/Mystery.png"
+        "map": "assets/img/Misano.png"
     },
     {
         "name": "German GP",
@@ -66,7 +66,7 @@
         "map": "assets/img/Spa.png"
     },
     {
-        "name": "Italian GP",
+        "name": "Italian GP (Autodromo Internazionale di Monza)",
         "track": "Autodromo Nazionale Monza",
         "date": "12/5/2026",
         "map": "assets/img/Monza.png"

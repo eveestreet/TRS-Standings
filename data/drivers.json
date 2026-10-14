@@ -1,15 +1,5 @@
 [
     {
-        "name": "DINOCHAMPION",
-        "role": "Main Driver",
-        "team": "007 Lancelot",
-        "principal": "eveestreet",
-        "points": 77,
-        "podiums": 4,
-        "wins": 3,
-        "attendance": 4
-    },
-    {
         "name": "tronicdoom",
         "role": "Main Driver",
         "team": "007 Lancelot",
@@ -68,6 +58,26 @@
         "podiums": 1,
         "wins": 0,
         "attendance": 3
+    },
+    {
+        "name": "DINOCHAMPION",
+        "role": "Main Driver",
+        "team": "Atlas GP",
+        "principal": "yoelan3",
+        "points": 77,
+        "podiums": 4,
+        "wins": 3,
+        "attendance": 4
+    },
+    {
+        "name": "ddrow77",
+        "role": "Main Driver",
+        "team": "Atlas GP",
+        "principal": "yoelan3",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
     },
     {
         "name": "ERYTO",
