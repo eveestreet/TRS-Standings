@@ -10,7 +10,7 @@
         "fastestLap": "jiwjiw60560"
     },
     {
-        "race": "United States GP",
+        "race": "United States GP ()",
         "podium": ["DINOCHAMPION", "Rod4YOUtzy", "LOLMZAN"],
         "fastestLap": "Rod4YOUtzy"
     },
@@ -20,22 +20,17 @@
         "fastestLap": "jiwjiw60560"
     },
     {
-        "race": "Mystery GP",
-        "podium": ["", "", ""],
-        "fastestLap": ""
+        "race": "Italian GP (Misano)",
+        "podium": ["DINOCHAMPION", "LOLMZAN", "ZeroHowler"],
+        "fastestLap": "On_Luckyl"
     },
     {
         "race": "German GP",
-        "podium": ["", "", ""],
-        "fastestLap": ""
+        "podium": ["On_Luckyl", "jiwjiw60560", "Rod4YOUtzy"],
+        "fastestLap": "jiwjiw60560"
     },
     {
         "race": "United States GP (Indianapolis)",
-        "podium": ["", "", ""],
-        "fastestLap": ""
-    },
-    {
-        "race": "Mystery GP",
         "podium": ["", "", ""],
         "fastestLap": ""
     },
@@ -55,7 +50,12 @@
         "fastestLap": ""
     },
     {
-        "race": "Italian GP",
+        "race": "Italian GP (Monza)",
+        "podium": ["", "", ""],
+        "fastestLap": ""
+    },
+    {
+        "race": "Japanese GP (Fuji)",
         "podium": ["", "", ""],
         "fastestLap": ""
     },

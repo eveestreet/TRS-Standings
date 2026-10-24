@@ -39,7 +39,7 @@
         "wins": 0,
         "attendance": 2
     },
-        {
+    {
         "name": "doggyuk1",
         "role": "Main Driver",
         "team": "Nova Customs",
@@ -49,7 +49,7 @@
         "wins": 0,
         "attendance": 0
     },
-        {
+    {
         "name": "kyssoya",
         "role": "Reserve Driver",
         "team": "Nova Customs",
@@ -59,11 +59,21 @@
         "wins": 0,
         "attendance": 0
     },
-        {
+    {
         "name": "theshadow7134",
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
+        "points": 0,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 0
+    },
+    {
+        "name": "IVatticus",
+        "role": "Reserve Driver",
+        "team": "Nova Customs",
+        "principal": "sushi",
         "points": 0,
         "podiums": 0,
         "wins": 0,
