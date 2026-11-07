@@ -30,7 +30,7 @@
         "map": "assets/img/Misano.png"
     },
     {
-        "name": "German GP",
+        "name": "German GP(Hockenheimring)",
         "track": "Hockenheimring",
         "date": "10/24/2026",
         "map": "assets/img/Hockenheim.png"
@@ -38,37 +38,37 @@
     {
         "name": "United States GP (Indianapolis)",
         "track": "Indianapolis Motor Speedway",
-        "date": "10/31/2026",
+        "date": "11/07/2026",
         "map": "assets/img/Indianapolis.png"
     },
-        {
-        "name": "Mystery GP ",
-        "track": "Mystery Track",
-        "date": "11/7/2026",
-        "map": "assets/img/Mystery.png"
+    {
+        "name": "German GP (Norisring) ",
+        "track": "Norisring",
+        "date": "11/14/2026",
+        "map": "assets/img/Norisring.png"
     },
     {
         "name": "British GP",
         "track": "Silverstone Circuit",
-        "date": "",
+        "date": "11/21/2026",
         "map": "assets/img/Silverstone.png"
     },
     {
         "name": "Belgian GP",
         "track": "Circuit de Spa-Francorchamps",
-        "date": "",
+        "date": "12/05/2026",
         "map": "assets/img/Spa.png"
     },
     {
         "name": "Italian GP (Autodromo Internazionale di Monza)",
         "track": "Autodromo Nazionale Monza",
-        "date": "",
+        "date": "12/12/2026",
         "map": "assets/img/Monza.png"
     },
     {
         "name": "Japanese GP (Fuji)",
         "track": "Fuji International Speedway",
-        "date": "",
+        "date": "12/19/2026",
         "map": "assets/img/Fuji.png"
     }
 ]

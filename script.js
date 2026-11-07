@@ -63,10 +63,15 @@ const circuitLocations = {
         lon: -86.2348,
         city: "Indianapolis, USA"
     },
-    "German GP": {
+    "German GP (Hockenheimring)": {
         lat: 49.3279,
         lon: 8.5656,
         city: "Hockenheim, Germany"
+    },
+    "German GP (Norisring)": {
+        lat: 49.4313,
+        lon: 11.1255,
+        city: "Nuremberg, Germany"
     },
     "British GP":{
         lat: 52.0691,
@@ -272,7 +277,7 @@ const info = document.getElementById("info");
 
 info.innerHTML = `
     <div class="info">
-        <h3>Standings information relevant as of ${getCurrentDate().toLocaleDateString()}</h3>
+        <h3>Standings information relevant as of ${getCurrentDate().toDateString()}</h3>
     </div>
 `;
 

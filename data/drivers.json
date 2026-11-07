@@ -54,20 +54,20 @@
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
-        "points": 84,
-        "podiums": 2,
+        "points": 105,
+        "podiums": 3,
         "wins": 0,
-        "attendance": 6
+        "attendance": 7
     },
     {
         "name": "DINOCHAMPION",
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
-        "points": 115,
-        "podiums": 5,
+        "points": 139,
+        "podiums": 6,
         "wins": 4,
-        "attendance": 6
+        "attendance": 7
     },
     {
         "name": "ddrow77",
@@ -124,26 +124,26 @@
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 25.5,
+        "points": 32.5,
         "podiums": 0,
         "wins": 0,
-        "attendance": 5
+        "attendance": 6
     },
     {
         "name": "Rod4YOUtzy",
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 94,
+        "points": 102,
         "podiums": 4,
         "wins": 1,
-        "attendance": 6
+        "attendance": 7
     },
     {
         "name": "IJN_Yamato",
         "role": "Main Driver",
         "team": "Onix Motorsport",
-        "principal": "leafXtra",
+        "principal": "seepingcrimson",
         "points": 1.5,
         "podiums": 0,
         "wins": 0,
@@ -153,7 +153,7 @@
         "name": "lyticallity_87215",
         "role": "Reserve Driver",
         "team": "Onix Motorsport",
-        "principal": "leafXtra",
+        "principal": "seepingcrimson",
         "points": 4,
         "podiums": 0,
         "wins": 0,
@@ -161,19 +161,19 @@
     },
     {
         "name": "ZeroHowler",
-        "role": "Main Driver",
+        "role": "Reserve Driver",
         "team": "Atlas GP",
-        "principal": "leafXtra",
-        "points": 27,
+        "principal": "seepingcrimson",
+        "points": 36,
         "podiums": 1,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "dj7045",
         "role": "Reserve Driver",
         "team": "Onix Motorsport",
-        "principal": "leafXtra",
+        "principal": "seepingcrimson",
         "points": 0,
         "podiums": 0,
         "wins": 0,
@@ -183,17 +183,17 @@
         "name": "carlcarl202010",
         "role": "Main Driver",
         "team": "Onix Motorsport",
-        "principal": "leafXtra",
-        "points": 45,
+        "principal": "seepingcrimson",
+        "points": 58,
         "podiums": 1,
         "wins": 0,
-        "attendance": 5
+        "attendance": 6
     },
     {
         "name": "Dragon_GhostBR",
         "role": "Main Driver",
         "team": "Nova Customs",
-        "principal": "sushi",
+        "principal": "Cynotex",
         "points": 8,
         "podiums": 0,
         "wins": 0,
@@ -203,7 +203,7 @@
         "name": "Fizaanshelby1",
         "role": "Reserve Driver",
         "team": "Nova Customs",
-        "principal": "sushi",
+        "principal": "Cynotex",
         "points": 12,
         "podiums": 0,
         "wins": 0,
@@ -213,17 +213,17 @@
         "name": "warychat",
         "role": "Main Driver",
         "team": "Nova Customs",
-        "principal": "sushi",
-        "points": 30,
+        "principal": "Cynotex",
+        "points": 44,
         "podiums": 0,
         "wins": 0,
-        "attendance": 4
+        "attendance": 5
     },
     {
         "name": "LOLMZAN",
         "role": "Main Driver",
         "team": "Nova Customs",
-        "principal": "sushi",
+        "principal": "Cynotex",
         "points": 58,
         "podiums": 3,
         "wins": 0,
@@ -233,20 +233,40 @@
         "name": "romanreinsj",
         "role": "Main Driver",
         "team": "Onix Motorsport",
-        "principal": "leafXtra",
-        "points": 9,
+        "principal": "seepingcrimson",
+        "points": 30,
         "podiums": 0,
         "wins": 0,
-        "attendance": 2
+        "attendance": 3
     },
     {
         "name": "timrosinnus64",
         "role": "Reserve Driver",
         "team": "Onix Motorsport",
-        "principal": "leafXtra",
+        "principal": "seepingcrimson",
         "points": 5,
         "podiums": 0,
         "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "seepingcrimson",
+        "role": "Reserve Driver",
+        "team": "Onix Motorsport",
+        "principal": "seepingcrimson",
+        "points": 1,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
+    },
+    {
+        "name": "Cynotex",
+        "role": "Reserve Driver",
+        "team": "Nova Customs",
+        "principal": "Cynotex",
+        "points": 31,
+        "podiums": 1,
+        "wins": 1,
         "attendance": 1
     }
 ]
