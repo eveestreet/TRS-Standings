@@ -130,16 +130,6 @@
         "attendance": 8
     },
     {
-        "name": "IJN_Yamato",
-        "role": "Main Driver",
-        "team": "Onix Motorsport",
-        "principal": "seepingcrimson",
-        "points": 1.5,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 1
-    },
-    {
         "name": "lyticallity_87215",
         "role": "Reserve Driver",
         "team": "Onix Motorsport",
@@ -182,7 +172,7 @@
     {
         "name": "doggyuk1",
         "role": "Main Driver",
-        "team": "Nova Customs",
+        "team": "Islington Racing",
         "principal": "Cynotex",
         "points": 20,
         "podiums": 1,
@@ -251,7 +241,7 @@
     },
     {
         "name": "seepingcrimson",
-        "role": "Reserve Driver",
+        "role": "Main Driver",
         "team": "Onix Motorsport",
         "principal": "seepingcrimson",
         "points": 1,

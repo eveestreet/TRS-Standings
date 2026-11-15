@@ -88,5 +88,15 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 0
+    },
+        {
+        "name": "IJN_Yamato",
+        "role": "Main Driver",
+        "team": "Onix Motorsport",
+        "principal": "seepingcrimson",
+        "points": 1.5,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 1
     }
 ]
