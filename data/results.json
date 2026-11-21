@@ -41,8 +41,8 @@
     },
     {
         "race": "British GP",
-        "podium": ["", "", ""],
-        "fastestLap": ""
+        "podium": ["yoelan3", "Cynotex", "LOLMZAN"],
+        "fastestLap": "yoelan3"
     },
     {
         "race": "Belgian GP",

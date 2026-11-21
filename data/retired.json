@@ -89,7 +89,7 @@
         "wins": 0,
         "attendance": 0
     },
-        {
+    {
         "name": "IJN_Yamato",
         "role": "Main Driver",
         "team": "Onix Motorsport",
@@ -98,5 +98,25 @@
         "podiums": 0,
         "wins": 0,
         "attendance": 1
+    },
+    {
+        "name": "narekalfasuper",
+        "role": "Main Driver",
+        "team": "Islington Racing",
+        "principal": "Hazard_71",
+        "points": 33.5,
+        "podiums": 0,
+        "wins": 0,
+        "attendance": 6
+    },
+    {
+        "name": "Hazard_71",
+        "role": "Reserve Driver",
+        "team": "Islington Racing",
+        "principal": "Hazard_71",
+        "attendance": 0,
+        "points": 0,
+        "podiums": 0,
+        "wins": 0
     }
 ]

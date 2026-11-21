@@ -54,20 +54,20 @@
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
-        "points": 120,
+        "points": 131,
         "podiums": 4,
         "wins": 0,
-        "attendance": 8
+        "attendance": 9
     },
     {
         "name": "DINOCHAMPION",
         "role": "Main Driver",
         "team": "Atlas GP",
         "principal": "yoelan3",
-        "points": 157,
+        "points": 172,
         "podiums": 7,
         "wins": 4,
-        "attendance": 8
+        "attendance": 9
     },
     {
         "name": "ddrow77",
@@ -84,10 +84,10 @@
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 52,
+        "points": 68,
         "podiums": 1,
         "wins": 0,
-        "attendance": 6
+        "attendance": 7
     },
     {
         "name": "Grov3s",
@@ -110,24 +110,24 @@
         "attendance": 0
     },
     {
-        "name": "narekalfasuper",
-        "role": "Main Driver",
-        "team": "Islington Racing",
-        "principal": "Hazard_71",
-        "points": 33.5,
-        "podiums": 0,
-        "wins": 0,
-        "attendance": 6
-    },
-    {
         "name": "Rod4YOUtzy",
         "role": "Main Driver",
         "team": "Islington Racing",
         "principal": "Hazard_71",
-        "points": 112,
+        "points": 116,
         "podiums": 4,
         "wins": 1,
-        "attendance": 8
+        "attendance": 9
+    },
+        {
+        "name": "doggyuk1",
+        "role": "Reserve Driver",
+        "team": "Islington Racing",
+        "principal": "Cynotex",
+        "points": 20,
+        "podiums": 1,
+        "wins": 1,
+        "attendance": 1
     },
     {
         "name": "lyticallity_87215",
@@ -164,20 +164,10 @@
         "role": "Main Driver",
         "team": "Onix Motorsport",
         "principal": "seepingcrimson",
-        "points": 55,
+        "points": 68,
         "podiums": 1,
         "wins": 0,
-        "attendance": 6
-    },
-    {
-        "name": "doggyuk1",
-        "role": "Main Driver",
-        "team": "Islington Racing",
-        "principal": "Cynotex",
-        "points": 20,
-        "podiums": 1,
-        "wins": 1,
-        "attendance": 1
+        "attendance": 7
     },
     {
         "name": "Dragon_GhostBR",
@@ -204,30 +194,30 @@
         "role": "Main Driver",
         "team": "Nova Customs",
         "principal": "Cynotex",
-        "points": 51,
+        "points": 55,
         "podiums": 0,
         "wins": 0,
-        "attendance": 6
+        "attendance": 7
     },
     {
         "name": "LOLMZAN",
         "role": "Main Driver",
         "team": "Nova Customs",
         "principal": "Cynotex",
-        "points": 70,
-        "podiums": 3,
+        "points": 93,
+        "podiums": 4,
         "wins": 0,
-        "attendance": 4
+        "attendance": 5
     },
     {
         "name": "romanreinsj",
         "role": "Main Driver",
         "team": "Onix Motorsport",
         "principal": "seepingcrimson",
-        "points": 30,
+        "points": 38,
         "podiums": 0,
         "wins": 0,
-        "attendance": 3
+        "attendance": 4
     },
     {
         "name": "timrosinnus64",
@@ -254,9 +244,29 @@
         "role": "Reserve Driver",
         "team": "Nova Customs",
         "principal": "Cynotex",
-        "points": 31,
+        "points": 58,
+        "podiums": 2,
+        "wins": 1,
+        "attendance": 2
+    },
+    {
+        "name": "yoelan3",
+        "role": "Reserve Driver",
+        "team": "Atlas GP",
+        "principal": "yoelan3",
+        "points": 30,
         "podiums": 1,
         "wins": 1,
+        "attendance": 1
+    },
+    {
+        "name": "Merc_102",
+        "role": "Main Driver",
+        "team": "Islington Racing",
+        "principal": "Hazard_71",
+        "points": 5,
+        "podiums": 0,
+        "wins": 0,
         "attendance": 1
     }
 ]
